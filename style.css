@@ -270,6 +270,117 @@ h2{
     font-size: 110%;
     line-height: 1.6;
   }
+  :root {
+    --gutter: 20px;
+  }
+  .box13 {
+    margin-top: -5%;
+    padding-bottom: 8%;
+  }
+  .box13 .hs {
+      display: grid;
+      grid-gap: calc(var(--gutter)/.66);
+      grid-template-columns: 10px repeat(6, calc(32% - var(--gutter) * 2)) 10px;
+      grid-template-rows: minmax(280px, 1fr);
+      overflow-x: scroll;
+      scroll-snap-type: x proximity;
+      padding-bottom: calc(.75 * var(--gutter));
+      margin-bottom: calc(-.5 * var(--gutter));
+    }
+  .hs:before,
+  .hs:after {
+      content: '';
+    }
+  .hs > li,
+  .item {
+      scroll-snap-align: center;
+      /*padding: calc(var(--gutter) / 2 * 1.5);*/
+      display: flex;
+      flex-direction: column;
+      /*justify-content: center;*/
+      align-items: center;
+      background: white;
+      border-radius: 20px;
+  }
+  .item img {
+      width: 100%;
+  }
+  /*.item1 img {
+      width: 140%; 
+  }*/
+  .hide-scroll {
+      overflow-y: hidden;
+      margin-bottom: calc(-.1 * var(--gutter));
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .box13 .hs1 {
+      display: grid;
+      grid-gap: calc(var(--gutter)/.66);
+      grid-template-columns: 10px repeat(6, calc(45% - var(--gutter) * 2)) 10px;
+      grid-template-rows: minmax(280px, 1fr);
+      overflow-x: scroll;
+      scroll-snap-type: x proximity;
+      padding-bottom: calc(.75 * var(--gutter));
+      margin-bottom: calc(-.5 * var(--gutter));
+    }
+  .hs1:before,
+  .hs1:after {
+      content: '';
+    }
+  .hs1 > li,
+  .item {
+      scroll-snap-align: center;
+      /*padding: calc(var(--gutter) / 2 * 1.5);*/
+      display: flex;
+      flex-direction: column;
+      /*justify-content: center;*/
+      align-items: center;
+      background: white;
+      border-radius: 20px;
+      filter: drop-shadow(20px 100px 60px #f5f5f5); 
+  }
+  .item img {
+      width: 100%;
+      border-right: 80px;
+  }
+ /* .box14 {
+    padding-bottom: 5%;
+  }*/
+  .box14 .hs3 {
+      display: grid;
+      grid-gap: calc(var(--gutter)/.66);
+      grid-template-columns: 10px repeat(6, calc(20% - var(--gutter) * 2)) 10px;
+      grid-template-rows: minmax(130px, 1fr);
+      overflow-x: scroll;
+      scroll-snap-type: x proximity;
+      padding-bottom: calc(.75 * var(--gutter));
+      margin-bottom: calc(-.5 * var(--gutter));
+    }
+  .hs3:before,
+  .hs3:after {
+      content: '';
+    }
+  .hs3 > li,
+  .item {
+      scroll-snap-align: center;
+      /*padding: calc(var(--gutter) / 2 * 1.5);*/
+      display: flex;
+      flex-direction: column;
+      /*justify-content: center;*/
+      align-items: center;
+      background: white;
+      border-radius: 20px;
+  }
+  .item img {
+      width: 100%;
+  }
   .box16 {
     padding-bottom: 10%;
   }
@@ -280,10 +391,10 @@ h2{
   	z-index: 1;
   }
   .review {
-   	border-radius: 5%;
+   	border-radius: 40px;
    	/*border: 1px black solid;*/
     /*box-shadow: 5px 5px 5px 5px #f2f2f2;*/
-    box-shadow: 20px 20px 40px #f5f5f5, 0 0 25px #f3f3f3, 0 0 5px #f2f2f2 ;
+    box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
    	margin-left: 15%;
    	margin-right: 15%;
    	background-color: white;
@@ -310,13 +421,14 @@ h2{
     letter-spacing: 3%;
  }
   .blog1 {
-  	border-radius: 8%;
+  	border-radius: 40px;
    	/*border: 1px black solid;*/
    	margin-left: 13%;
    	margin-right: 9%;
    	margin-top: -5%;
    	margin-bottom: 20%;
-   	box-shadow: 20px 20px 40px #999999, 0 0 25px #f3f3f3, 0 0 5px #f2f2f2 ;
+   	/*box-shadow: 20px 20px 40px #999999, 0 0 25px #f3f3f3, 0 0 5px #f2f2f2 ;*/
+    box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
 }
   .blog1 img {
   	width: 100%;
@@ -333,13 +445,13 @@ h2{
     font-family: 'Cera Pro medium';
 }
   .blog2 {
-  	border-radius: 8%;
+  	border-radius: 40px;
    	/*border: 1px black solid;*/
    	margin-left: 9%;
    	margin-right: 13%;
    	margin-top: -5%;
    	margin-bottom: 20%;
-   	box-shadow: 20px 20px 40px #999999, 0 0 25px #f3f3f3, 0 0 5px #f2f2f2 ;
+   	box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
 }
   .blog2 img {
   	width: 100%;
@@ -356,7 +468,7 @@ h2{
     font-family: 'Cera Pro medium';
 }
   .box22 img {
-    /*margin-top: 10%;*/
+    margin-top: -10%;
 	  width: 90%;
   	height: auto;
   	position: relative;
@@ -365,20 +477,23 @@ h2{
   .team1 {
     font-family: 'Cera Pro medium';
     font-size: 130%;
-  	border-radius: 5%;
-   	border: 1px lightgrey solid;
+  	border-radius: 4%;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
+   	/*border: 1px lightgrey solid;*/
    	margin-left: 15%;
    	margin-right: 15%;
-   	background-color: white;
    	padding-left: 10%;
    	padding-right: 10%;
    	line-height: 1.6;
-   	margin-top: -22%;
+   	margin-top: -8%;
    	position: relative;
    	z-index: 10;
+    padding-top: 5%;
+    padding-bottom: 8%;
 }
   .box23 img {
-    /*margin-top: 10%;*/
+    margin-top: -10%;
 	  width: 90%;
   	height: auto;
   	position: relative;
@@ -387,20 +502,24 @@ h2{
   .team2 {
     font-family: 'Cera Pro medium';
     font-size: 130%;
-  	border-radius: 5%;
-   	border: 1px lightgrey solid;
+  	border-radius: 4%;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
+   	/*border: 1px lightgrey solid;*/
    	margin-left: 15%;
    	margin-right: 15%;
    	background-color: white;
    	padding-left: 10%;
    	padding-right: 10%;
    	line-height: 1.6;
-   	margin-top: -22%;
+   	margin-top: -8%;
    	position: relative;
    	z-index: 10;
+    padding-top: 5%;
+    padding-bottom: 8%;
 }
   .box24 img {
-    /*margin-top: 10%;*/
+    margin-top: -10%;
   	width: 90%;
   	height: auto;
   	position: relative;
@@ -409,20 +528,24 @@ h2{
   .team3 {
     font-family: 'Cera Pro medium';
     font-size: 130%;
-  	border-radius: 5%;
-   	border: 1px lightgrey solid;
+  	border-radius: 4%;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
+   	/*border: 1px lightgrey solid;*/
    	margin-left: 15%;
    	margin-right: 15%;
    	background-color: white;
    	padding-left: 10%;
    	padding-right: 10%;
    	line-height: 1.6;
-   	margin-top: -22%;
+   	margin-top: -8%;
    	position: relative;
    	z-index: 10;
+    padding-top: 5%;
+    padding-bottom: 8%;
 }
   .box25 img {
-    /*margin-top: 10%;*/
+    margin-top: -10%;
 	  width: 90%;
   	height: auto;
   	position: relative;
@@ -431,50 +554,74 @@ h2{
   .team4 {
     font-family: 'Cera Pro medium';
     font-size: 130%;
-  	border-radius: 5%;
-   	border: 1px lightgrey solid;
+  	border-radius: 4%;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
+   	/*border: 1px lightgrey solid;*/
    	margin-left: 15%;
    	margin-right: 15%;
    	background-color: white;
    	padding-left: 10%;
    	padding-right: 10%;
    	line-height: 1.6;
-   	margin-top: -22%;
+   	margin-top: -8%;
    	position: relative;
    	z-index: 10;
+    padding-top: 5%;
+    padding-bottom: 8%;
 }
   .contact {
-  	border-radius: 10%;
-   	border: 1px black solid;
-   	margin-left: 20%;
-   	margin-right: 20%;
+  	border-radius: 40px;
+   	/*border: 1px black solid;*/
+    box-shadow: 20px 20px 40px #f8f8f8, 0 0 25px #f3f3f3, 0 0 5px #f2f2f2 ;
+   	margin-left: 10%;
+   	margin-right: 10%;
    	background-color: white;
-   	margin-top: 10%;
-   	margin-bottom: 5%;
+   	margin-top: 20%;
+   	margin-bottom: 8%;
 }
   .contact .icons {
-  	margin-top: 5%;
+  	padding-top: 3%;
   	margin-bottom: 10%;
 }
   .contact .icons span {
   	float: left;
-  	margin-right: 10%;
-  	width: 30%;
+    margin-left: -2%;
+    width: 40%;
 }
   .icons span img {
-	  width: 10%;
+	  width: 12%;
+    margin-right: 7%;
 }
   .icons button {
-  	margin-right: -25%;
-  	padding: 1%;
+    font-family: 'Cera Pro medium';
+    color: white;
+    background-color: #e02020;
+    font-size: 135%;
+  	margin-right: -33%;
+  	padding: 1.3%;
   	padding-left: 3%;
   	padding-right: 3%;
+    border-radius: 40px;
 }
   .contact .info .mail {
-	  font-size: 200%;
+	  font-size: 260%;
+    font-family: 'Cera Pro thin';
+    margin-top: -3%;
+}
+  .info .add {
+    font-size: 120%;
+    font-family: 'Cera Pro medium';
+}
+  .info .number {
+    font-size: 130%;
+    font-family: 'Cera Pro light';
+    line-height: 1.3;
 }
   .info .terms {
 	  margin-top: 10%;
+    padding-bottom: 2%;
+    font-family: 'Cera Pro light';
 }
   @media screen and (max-width: 575px) {
     .grid {
