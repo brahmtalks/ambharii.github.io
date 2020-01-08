@@ -637,7 +637,7 @@
       margin: 10px 0;
     }
   }*/
-  @media (min-width: 360px) and (max-width: 1024px) {
+  @media (min-width: 360px) and (max-width: 767px) {
     .grid {
       display: block;
     }
