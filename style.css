@@ -637,7 +637,7 @@
       margin: 10px 0;
     }
   }*/
-  @media (min-width: 360px) and (max-width: 767px) {
+  @media (min-width: 360px) and (max-width: 1024px) {
     .grid {
       display: block;
     }
@@ -774,7 +774,7 @@
       line-height: 1.3;
     }
     .info .terms {
-      margin-top: 25%;
+      margin-top: 20%;
       padding-bottom: 2%;
       font-family: 'Cera Pro light';
     }
