@@ -4,6 +4,20 @@
     <title>ambharii - Mobile and Web Development</title>
     <meta name="description" content="Empowering businesses with our cutting edge  Next-gen Technology Consulting and Solution Services that is easily and rapidly scalable, custom-built and secure. Reach us for demo of our use cases.">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="main.js" ></script> 
+    <script>
+      $(window).load(function () {
+      $(".trigger_popup_fricc").click(function(){
+         $('.hover_bkgr_fricc').show();
+      });
+      $('.hover_bkgr_fricc').click(function(){
+          $('.hover_bkgr_fricc').hide();
+      });
+      $('.popupCloseButton').click(function(){
+          $('.hover_bkgr_fricc').hide();
+      });
+    </script>
 </head>
 <body>
 
@@ -15,8 +29,8 @@
       <img src="img/creative1.png" alt="home_creative">
   </div>
   <div class="box box3">
-      <h3> #about</h3>
-      <p>Many people consider to be  creative, but this world needs creativity and innovation together which is here and innovation together which is here</p>
+      <h3> Our Story </h3>
+      <p>The best minds in Web & App. Development have come together to help businesses grow with out of the box design & experience, with a unique approach that is connection centric, innovation focused and positivity driven.</p>
       <span><a href="http://bit.ly/36vAYzY"><img src="img/linkedin.png" alt="linkedin_logo"></a>
       <a href="http://bit.ly/36xm7VM"><img src="img/whatsapp.png" alt="whatsapp_logo"></a>
       <a href="http://bit.ly/2MZxiPh"><img src="img/facebook.png" alt="facebook_logo"></a></span>
@@ -32,38 +46,55 @@
   </div>
   <div class="box box7">
       <div class="one"> 
-        <img src="img/service1.png" alt="web_development"> 
-        <img src="img/service2.png" class="img1" alt="app_development"> 
+        <div class="card">
+          <span class="hvr-bob"><img src="img/service1.png" alt="web_development"> </span>
+          <span class="hvr-bob"><img src="img/service2.png" class="img1" alt="app_development"> </span>
+        </div>
       </div>
       <div class="two"> 
-        <img src="img/service3.png" alt="consulting"> 
-        <img src="img/service4.png" class="img2" alt="data_science"> 
+        <span class="hvr-bob"><img src="img/service3.png" alt="consulting"> </span>
+        <span class="hvr-bob"><img src="img/service4.png" class="img2" alt="data_science"> </span>
       </div>
   </div>
   <div class="box">
       <h2>Our Subsideries</h2>
   </div>
   <div class="box box9">
-      <img src="img/layer1.png" alt="ambharii_health">
+    <div class="hover01">
+      <figure><img src="img/layer1.png" alt="ambharii_health"></figure>
+    </div>
       <h3>Ambharii Health</h3>
-      <p>Many people consider to be  creative, but this world needs creativity and innovation together which is here and innovation together which is here.Many people consider to be  creative, but this world needs creativity, innovation </p>
+      <p> With a vision of providing Social skills to intellectually impaired    students and population, health matey is committed to bring smiles to the faces of our planet.
+ </p>
   </div>
-  <div class="box box10">
-      <img src="img/layer3.png" alt="ambharii_embedded_systems">
+  <div class="box box10 hover01">
+      <figure><img src="img/layer3.png" alt="ambharii_embedded_systems"></figure>
       <h3>Ambharii Embedded <br>Systems</h3>
-      <p>Many people consider to be  creative, but this world needs creativity and innovation together which is here and innovation together which is here.Many people consider to be  creative, but this world needs creativity, innovation  </p>
+      <p>From small digital tools to you household equipments, we have embedded solutions for them all, at much affordable cost.  </p>
   </div>
-  <div class="box box11">
-      <img src="img/layer2.png" alt="ambharii_retail">
+  <div class="box box11 hover01">
+      <figure><img src="img/layer2.png" alt="ambharii_retail"></figure>
       <h3>Ambharii Retails</h3>
-      <p>Many people consider to be  creative, but this world needs creativity and innovation together which is here and innovation together which is here.Many people consider to be  creative, but this world needs creativity, innovation</p>
+      <p>A revolutionary idea of digitizing the retail space by planting kiosks to make retail more customer interactive. With FittedUSA, now every product is on your fingertips.</p>
   </div>
   <div class="box box12">
       <h2>Projects</h2>
   </div>
-  <div class="box box13">
+  <div class="box box13" id="box13">
     <ul class="hs no-scrollbar">
-      <li class="item"><img src="img/project111.png" alt="project1"></li>
+      
+      <a href="#popup1"><li class="item"><img src="img/project111.png" alt="project1"></li></a>
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <h2>App Development</h2>
+          <a class="close" href="#box13">&times;</a>
+          <div class="content">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </div>
+        </div>
+      </div>
+  
+      
       <li class="item"><img src="img/project2.png" alt="project2"></li>
       <li class="item"><img src="img/project33.png" alt="project3"></li>
       <li class="item"><img src="img/project111.png" alt="project4"></li>
@@ -169,6 +200,10 @@
       </div>
   </div> 
 </main>
-<script type="text/javascript" src="jss/theme.js"></script>
+<!-- <script type="text/javascript" src="main.js"></script> -->
+
+<!-- <script src="jquery.js" ></script> 
+<script src="tilt.js"></script> -->
+<!-- <script src="tilt.jquery.js"></script> -->
 </body>
 </html>
