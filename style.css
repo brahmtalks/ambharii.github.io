@@ -374,7 +374,7 @@
       content: '';
     }
   .hs3 > li,
-  .item {
+  .items {
       scroll-snap-align: center;
       /*padding: calc(var(--gutter) / 2 * 1.5);*/
       display: flex;
@@ -384,7 +384,7 @@
       background: white;
       border-radius: 20px;
   }
-  .item img {
+  .items img {
       width: 100%;
   }
   .box16 {
