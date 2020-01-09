@@ -48,151 +48,6 @@
   font-style: normal;
   }
 
-
-  /* header */
-
-  .navbar {
-    overflow: hidden;
-    background-color: rgba(256,256,256,.9);
-    margin-top: -10px;
-    position: relative;
-    z-index: 1000000;
-    
-    /*padding: 20px -20px 40px 10px;*/
-    /*height: 70px;*/
-  }
-  
-  .navbar a:hover {
-    font-size: 120%;
-    /*overflow: hidden;*/
-  }
-  
-
-/* #navbar img {
-    width: 140px;
-} */
-.navbar h3{
-  font-family: 'Cera Pro Medium';
-  padding-left: 70px;
-  color: rgb(90, 90, 90);
-  font-size: 20px;
-}
-
-
-#mobnav {
-    display: none;
-}
-
-#header-right {
-    float: right;
-    padding-right: 70px;
-    margin-top: -50px;
-    
-}
-
-
-
-#widenav a {
-    font-size: 115%;
-    padding: 5px 10px 10px 10px;
-    /* text-transform: uppercase; */
-
-    font-family: 'Cera Pro Light';
-    color: rgb(114, 114, 114);
-
-    cursor: pointer;
-
-    position: relative;
-    top: 10px;
-}
-
-/*.active-link, #widenav a:hover {
-    color: rgb(48, 48, 48) !important;
-}*/
-
-#drawer {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: rgb(255, 255, 255); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 100px; /* Place content 60px from the top */
-    transition: 0.5s;
-    box-shadow: 2px 0px 5px 0px rgba(153, 153, 153, 0.75);
-    user-select: none;
-    z-index: 5;
-
-
-}
-
-#drawer a {
-    padding: 8px 8px 38px 82px;
-    text-decoration: none;
-    font-size: 45px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Cera Pro Light';
-    
-}
-
-#drawer a:hover {
-    color: #1d1d1d;
-}
-.myButton {
-  /*box-shadow:inset 0px 1px 0px 0px #f29c93;*/
-  background:linear-gradient(to bottom, #fe1a00 5%, #e02020 100%);
-  background-color:#fe1a00;
-  border-radius:8px;
-  /*border:1px solid #d83526;*/
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-family: 'Cera Pro Light';
-  height: 15px;
-  vertical-align: middle;
-  margin-top: -5px;
-  
-}
-.myButton:hover {
-  background:linear-gradient(to bottom, #ce0100 5%, #e02020 100%);
-  background-color:#ce0100;
-  color: white;
-}
-.myButton:active {
-  position:relative;
-  top:1px;
-}
-#closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    margin-left: 50px;
-    margin-top: 20px;
-    font-size: 196% !important;
-}
-
-#closebtn:hover {
-    color: #000;
-}
-
-
-.sticky {
-  position: fixed;
-  /*top: 100;*/
-  width: 98.5%;
-
-  /* text-align: center; */
-}
-
-.sticky + .content1 {
-  /*padding-top: 360px;*/
-}
-
-
   h2{
     font-family: 'Cera Pro Black';
     font-size: 60px;
@@ -284,8 +139,7 @@
 
   .box1 img{
   	height: auto;
-  	padding-top: 50px;
-    width: 8%;
+  	width: 20%;
   }
   .box2 img {
   	margin-top: 5%;
@@ -836,90 +690,8 @@
 .hover01 figure:hover img {
   width: 81%;
 }
-/*project popup*/
-.hover_bkgr_fricc{
-    background:rgba(0,0,0,.4);
-    cursor:pointer;
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
-}
-.hover_bkgr_fricc .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.hover_bkgr_fricc > div {
-    background-color: #fff;
-    box-shadow: 10px 10px 60px #555;
-    display: inline-block;
-    height: auto;
-    max-width: 551px;
-    min-height: 100px;
-    vertical-align: middle;
-    width: 60%;
-    position: relative;
-    border-radius: 8px;
-    padding: 15px 5%;
-}
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-.trigger_popup_fricc {
-    cursor: pointer;
-    font-size: 20px;
-    margin: 20px;
-    display: inline-block;
-    font-weight: bold;
-}
 /*second try for project pop up*/
 
-/*.boxes {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
-}
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #06D85F;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #06D85F;
-}
-*/
 .overlay {
   position: fixed;
   top: 0;
@@ -965,7 +737,7 @@
   color: #333;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: grey;
 }
 .popup h2 {
   text-align: center;
@@ -978,7 +750,30 @@
   font-size: 100%;
   line-height: 1.8;
   overflow: auto;
-
+}
+/*blog hover effect*/
+.hover-shown,.hover-shown-1{
+  display:none;
+}
+.shown:hover   .hover-shown{
+  display:block;
+}
+.shown-1:hover .hover-shown-1{
+  display:block;
+}
+/*services hover effect*/
+.hvrbox .hvrbox-layer_slideright {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.hvrbox:hover .hvrbox-layer_slideright,
+.hvrbox.active .hvrbox-layer_slideright {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 /*  @media screen and (max-width: 575px) {
     .grid {
@@ -998,43 +793,6 @@
     h2 {
       text-align: center;
     }
-
-    /* header */
-    .navbar {
-        /*padding: 5px 10px 0px 10px;*/
-    }
-    .navbar h3{
-      /*padding-top: 10px;*/
-      font-size: 140%;
-    }
-
-    .navbar img {
-        width: 100px !important;
-    }
-
-    #widenav {
-        display: none;
-    }
-
-    #mobnav {
-        display: block;
-        background: none;
-        padding: 4px 8px 4px 8px;
-        border: solid 1px #e3e3e3;
-        line-height: 10px;
-        color:  rgb(114, 114, 114);
-        border-radius: 18px;
-
-        position: relative;
-        top: -3px;
-    }
-
-    #mobnav:hover {
-        color:  rgb(46, 46, 46);
-
-    }
-
-    /* End of header */
     .box1 img{
       width: 50%;
     }

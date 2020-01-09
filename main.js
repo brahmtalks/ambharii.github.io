@@ -29,3 +29,64 @@
 // $(document).ready(function(){
 	
 // });
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("drawer").style.width = "550px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("drawer").style.width = "0";
+}
+
+
+  // JS tilt Effect
+function hoverTilt () {
+  var tiltBlock = $('.js-tilt');
+  if(tiltBlock.length) {
+    $('.js-tilt').tilt({
+        glare: true,
+        maxGlare: .3
+    })
+  }
+}
+
+$(document).ready(function(){
+
+  $(".navbar").hide(); //Hide the navigation bar first
+
+    $(window).scroll(function () {  //Listen for the window's scroll event
+        if (isScrolledAfterElement("#content")) { //if it has scrolled beyond the #content elment
+            $('.navbar').fadeIn();  //Show the navigation bar
+        } else {
+            $('.navbar').fadeOut(); //Else hide it
+        }
+    });
+
+    //Function that returns true if the window has scrolled beyond the given element
+    function isScrolledAfterElement(elem) {
+        var $elem = $(elem);
+        var $window = $(window);
+
+        var docViewTop = $window.scrollTop();
+        var docViewBottom = docViewTop + $window.height();
+
+        var elemTop = $elem.offset().top;
+
+        return elemTop <= docViewBottom;
+    }
+});
+
+
+function myFunction1() {
+  var elmnt = document.getElementById("services");
+  elmnt.scrollIntoView();
+}
+
+function myFunction2() {
+  var elmnt = document.getElementById("projects");
+  elmnt.scrollIntoView();
+}
+
