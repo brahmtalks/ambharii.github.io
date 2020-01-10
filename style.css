@@ -1092,7 +1092,7 @@
 /*end project hover effect*/
 
 /*blog hover effect*/
-.hovereffect {
+/*.hovereffect {
     width: 100%;
     height: 100%;
     float: left;
@@ -1214,7 +1214,7 @@
 .hovereffect:hover p.icon-links a:first-child {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
-}
+}*/
 /*end blog hover effect*/
 /*  @media screen and (max-width: 575px) {
     .grid {
