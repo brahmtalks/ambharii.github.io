@@ -78,8 +78,6 @@ $(document).ready(function(){
         return elemTop <= docViewBottom;
     }
 });
-
-
 function myFunction1() {
   var elmnt = document.getElementById("services");
   elmnt.scrollIntoView();
@@ -89,4 +87,6 @@ function myFunction2() {
   var elmnt = document.getElementById("projects");
   elmnt.scrollIntoView();
 }
+
+
 

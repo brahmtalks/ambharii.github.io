@@ -322,8 +322,46 @@
     width: 100%;
     padding-top: 10%;
   }
+  .box6 {
+    position: relative;
+  }
   .box6 img {
     padding-top: 6%;
+  }
+  .box6 #myImg {
+    display: none;
+    position: absolute;
+    width: 85%;
+    height: auto;
+    margin-top: -7%;
+    opacity: 1;
+  }
+  .box6 #myImg2 {
+    position: relative;
+  }
+  .box6 #myImg3 {
+    display: none;
+    position: absolute;
+    width: 85%;
+    height: auto;
+    margin-top: -7%;
+    opacity: 1;
+  }
+  .box6 #myImg4 {
+    display: none;
+    position: absolute;
+    width: 85%;
+    height: auto;
+    margin-top: -7%;
+    opacity: 1;
+  }
+  .box6 #myImg5 {
+    display: none;
+    position: absolute;
+    width: 85%;
+    height: auto;
+    margin-top: -7%;
+    opacity: 1;
   }
   .box .box7 {
   	display: grid;
@@ -910,32 +948,6 @@
     font-weight: bold;
 }
 /*second try for project pop up*/
-
-/*.boxes {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
-}
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #06D85F;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #06D85F;
-}
-*/
 .overlay {
   position: fixed;
   top: 0;
@@ -952,7 +964,6 @@
   visibility: visible;
   opacity: 1;
 }
-
 .popup {
   margin: 70px auto;
   margin-top: 10%;
@@ -964,7 +975,6 @@
   position: relative;
   transition: all 5s ease-in-out;
 }
-
 .popup h2 {
   margin-top: 0;
   color: #333;
@@ -996,6 +1006,85 @@
   overflow: auto;
 
 }
+/*project hover effect*/
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+.tiles .tile {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  opacity: .99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  img: hover;
+  img-width: 70%;
+}
+.tiles .tile:before {
+  content: '';
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+}
+.tiles .tile img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.tiles .tile .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+.tiles .tile .details span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+.tiles .tile .details .title {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+}
+.tiles .tile .details .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.tiles .tile:focus:before,
+.tiles .tile:focus span, .tiles .tile:hover:before,
+.tiles .tile:hover span {
+  opacity: 1;
+}
+.tiles .tile:focus:before, .tiles .tile:hover:before {
+  top: 50%;
+}
+.tiles .tile:focus span, .tiles .tile:hover span {
+  top: 0;
+}
+.tiles .tile:focus .title, .tiles .tile:hover .title {
+  transition-delay: 0.15s;
+}
+.tiles .tile:focus .info, .tiles .tile:hover .info {
+  transition-delay: 0.25s;
+}
+/*end project hover effect*/
 /*  @media screen and (max-width: 575px) {
     .grid {
       display: block;
