@@ -288,9 +288,9 @@
     width: 8%;
   }
   .box2 img {
-  	margin-top: 3%;
+  	margin-top: 6%;
   	margin-bottom: 5%;
-    width: 90%;
+    width: 82%;
   }
   .box3{
     padding-left: 10%;
@@ -663,13 +663,13 @@
     font-family: 'Cera Pro medium';
 }
   .box22 img {
-    margin-top: -10%;
+    margin-top: 5%;
 	  width: 90%;
   	height: auto;
   	position: relative;
   	z-index: 1;
+    cursor: url("img/linkedin.png"), auto;
 }
-
   .team p{
     font-family: 'Cera Pro light';
     font-size: 60%;
@@ -699,11 +699,13 @@
     padding-bottom: 8%;
 }
   .box23 img {
-    margin-top: -10%;
+    margin-top: 5%;
 	  width: 90%;
   	height: auto;
   	position: relative;
   	z-index: 1;
+    z-index: 1;
+    cursor: url("img/linkedin.png"), auto;
 }
   .team2 {
     font-family: 'Cera Pro medium';
@@ -725,11 +727,13 @@
     padding-bottom: 8%;
 }
   .box24 img {
-    margin-top: -10%;
+    margin-top: 5%;
   	width: 90%;
   	height: auto;
   	position: relative;
   	z-index: 1;
+    z-index: 1;
+    cursor: url("img/linkedin.png"), auto;
 }
   .team3 {
     font-family: 'Cera Pro medium';
@@ -751,11 +755,13 @@
     padding-bottom: 8%;
 }
   .box25 img {
-    margin-top: -10%;
+    margin-top: 5%;
 	  width: 90%;
   	height: auto;
   	position: relative;
   	z-index: 1;
+    z-index: 1;
+    cursor: url("img/linkedin.png"), auto;
 }
   .team4 {
     font-family: 'Cera Pro medium';
