@@ -402,7 +402,7 @@
     padding-top: 30%;
   }
   .box3 p {
-  	font-size: 30px;
+  	font-size: 25px;
     line-height: 1.6;
   	text-align: left;
   	font-family: 'Cera Pro Light';
@@ -434,6 +434,11 @@
     padding-top: 6%;
   }
   .box6 #myImg {
+    position: relative;
+    width: 85%;
+    margin-top: -10%;
+  }
+  .box6 #myImg1 {
     display: none;
     position: absolute;
     width: 85%;
@@ -442,9 +447,12 @@
     opacity: 1;
   }
   .box6 #myImg2 {
-    position: relative;
+    display: none;
+    position: absolute;
     width: 85%;
-    margin-top: -10%;
+    height: auto;
+    margin-top: -7%;
+    opacity: 1;
   }
   .box6 #myImg3 {
     display: none;
@@ -455,14 +463,6 @@
     opacity: 1;
   }
   .box6 #myImg4 {
-    display: none;
-    position: absolute;
-    width: 85%;
-    height: auto;
-    margin-top: -7%;
-    opacity: 1;
-  }
-  .box6 #myImg5 {
     display: none;
     position: absolute;
     width: 85%;
@@ -515,7 +515,6 @@
   }*/
   .box9 img {
   	width: 68%;
-  	margin-left: 8%;
     margin-top: -8%;
   }
   .box9 h3 {
@@ -536,7 +535,6 @@
   }
   .box10 img {
   	width: 68%;
-  	margin-left: 8%;
     margin-top: -8%;
   }
   .box10 h3 {
@@ -556,7 +554,6 @@
   }
   .box11 img {
   	width: 68%;
-  	margin-left: 8%;
     margin-top: -8%;
   }
   .box11 h3 {
@@ -837,7 +834,7 @@
   }
   .team p{
     font-family: 'Cera Pro light';
-    font-size: 75%;
+    font-size: 85%;
   }
 
   .team h4{
