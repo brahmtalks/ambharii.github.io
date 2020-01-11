@@ -4,6 +4,26 @@
     <title>Ambharii - Next-Generation Data and IT Consulting,Solutions & Services</title>
     <meta name="description" content="Empowering businesses with our cutting edge  Next-gen Technology Consulting and Solution Services that is easily and rapidly scalable, custom-built and secure. Reach us for demo of our use cases.">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="flickity.css" media="screen"> -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  -->
+   <!--  <script>
+        let AppError = false;
+        window.onerror = (e, src, line, col) => {
+            document.querySelector('#sr_intr img').src = "assets/logo.png";
+            document.querySelector('#sr_intr div').innerText = "Dhiyo";
+            document.querySelector('#sr_intr').style.display = 'block';
+            document.querySelector('#sr_intr p').style.marginTop = "30px";
+            if (!AppError) {
+                document.querySelector('#sr_intr p').innerText = `Error in ${src}, at line: ${line}, col: ${col}, ${e}`;
+                setTimeout(() => {
+                    southBridge({ req: "atomic" });
+                }, 1000);
+                AppError = true;
+            }
+        }
+    </script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <!-- services effect -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -108,7 +128,7 @@
       <img src="img/service22.png" alt="Show/Hide Image" id="myImg3">
       <img src="img/analytics.png" alt="Show/Hide Image" id="myImg4">
       <img src="img/service44.png" alt="Show/Hide Image" id="myImg5">
-      <img src="img/train.png" alt="services_creative" id="myImg2" >
+      <img src="img/8.png" alt="services_creative" id="myImg2" >
   </div>
   <div class="box box7">
       <div class="one"> 
@@ -271,7 +291,7 @@
           <img src="img/healthmatey.png" alt="project7" class="project7">
         <!-- </li> -->
           <div class="details">
-            <span class="title">HealthMatey</span>
+            <span class="title">HealthMatey - NonProfitable Organization</span>
             <!-- <span class="info">Quisqueee vel felis leccccctus donec vittttae dapibus magna</span> -->
           </div>
         </a>
@@ -288,7 +308,7 @@
         <a href="#popup8" class="tile">
             <img src="img/fittedusa.png" alt="project8" class="project8">
           <div class="details">
-            <span class="title">Fitted USA</span>
+            <span class="title">Fitted USA - Automation Product</span>
             <!-- <span class="info">Quisqueee vel felis leccccctus donec vittttae dapibus magna</span> -->
           </div>
         </a>
@@ -372,26 +392,59 @@
     </ul>
   </div>
   
-  <div class="box box14" id="">
+  <div class="box box14 carousel" data-flickity='{ "autoPlay": true }' id="box14">
     <ul class="hs3 no-scrollbar" >
-      <li class="items "><img src="img/client1.png" alt="datrstax"></li>
-      <li class="items "><img src="img/client2.png" alt="IBM"></li>
-      <li class="items "><img src="img/client3.png" alt="MAPR"></li>
-      <li class="items "><img src="img/client4.png" alt="Hortonworks"></li>
-      <li class="items "><img src="img/client5.png" alt="cloudera"></li>
-      <li class="items "><img src="img/client1.png" alt="datrstax"></li>
+      <div class="carousel-cell">
+        <li class="items carousel-cell "><img src="img/client1.png" alt="datrstax"></li>
+      </div>
+      <div class="carousel-cell">
+        <li class="items carousel-cell "><img src="img/client2.png" alt="IBM"></li>
+      </div>
+      <div class="carousel-cell">
+        <li class="items carousel-cell carousel-item "><img src="img/client3.png" alt="MAPR"></li>
+      </div>
+      <div class="carousel-cell">
+        <li class="items carousel-cell "><img src="img/client4.png" alt="Hortonworks"></li>
+      </div>
+      <div class="carousel-cell">
+        <li class="items carousel-cell "><img src="img/client5.png" alt="cloudera"></li>
+      </div>
+      <div class="carousel-cell">
+        <li class="items carousel-cell "><img src="img/client1.png" alt="datrstax"></li>
+      </div>
     </ul>
   </div>
   <div class="box box15">
       <h2></h2>
   </div>
-    <div class="box16 box reverse">
-        <img src="img/testimonial.png" alt="review_one">
-        <div class="review">
-            <h3>VP of Engineering, exp Reality</h3>
-            <h4>Development and QA Services for Real Estate Company</h4>
-            <p>" Indium improved the rigor of our testing processes and has resolved hundereds of bugs over the years. "</p>
-        </div>
+
+    <div class="box16 box" id="box16">
+      <ul class="hs4 no-scrollbar">
+        <li class="item ">
+          <img src="img/testimonial.png" alt="review_one">
+          <div class="review">
+              <h3>VP of Engineering, exp Reality</h3>
+              <h4>Development and QA Services for Real Estate Company</h4>
+              <p>" Indium improved the rigor of our testing processes and has resolved hundereds of bugs over the years. "</p>
+          </div>
+        </li>
+        <li class="item">
+          <img src="img/testimonial.png" alt="review_one">
+          <div class="review">
+              <h3>VP of Engineering, exp Reality</h3>
+              <h4>D and QA Services for Real Estate Company</h4>
+              <p>" Indium improved the rigor of our testing processes and has resolved hundereds of bugs over the years. "</p>
+          </div>
+        </li>
+        <li class="item">
+          <img src="img/testimonial.png" alt="review_one">
+          <div class="review">
+              <h3>VP of Engineering, exp Reality</h3>
+              <h4>Develo and QA Services for Real Estate Company</h4>
+              <p>" Indium improved the rigor of our testing processes and has resolved hundereds of bugs over the years. "</p>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="box17 box reverse">
         <p>Your <br> Treasured<br> Words<br> That <br>Keep <br>Us<br> Going</p>
@@ -418,11 +471,16 @@
             </div>
       </div>
   </div>
-  <div class="box box20">
+   <div class="box box20">
       <div class="blog2">
           <img src="img/22.png" alt="blog2_creative">
       </div>
   </div>
+ <!--  <div class="box box20">
+      <div class="blog2">
+          <img src="img/22.png" alt="blog2_creative">
+      </div>
+  </div> -->
   <div class="box box21">
       <h2>faces-in-Charge</h2>
   </div>
@@ -524,6 +582,8 @@
       }
     }
 </script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- <script src="flickity.pkgd.min.js"></script> -->
 <!-- <script type="text/javascript" src="main.js"></script> -->
 
 <!-- <script src="jquery.js" ></script> 

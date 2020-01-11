@@ -52,6 +52,7 @@ function hoverTilt () {
     })
   }
 }
+// nav bar
 
 $(document).ready(function(){
 
@@ -77,7 +78,9 @@ $(document).ready(function(){
 
         return elemTop <= docViewBottom;
     }
-});
+ });
+
+
 function myFunction1() {
   var elmnt = document.getElementById("services");
   elmnt.scrollIntoView();
@@ -87,6 +90,29 @@ function myFunction2() {
   var elmnt = document.getElementById("projects");
   elmnt.scrollIntoView();
 }
+// end nav bar
 
 
+// carousel
+var $carousel = $('.carousel').flickity({
+  imagesLoaded: true,
+  percentPosition: false,
+});
+
+var $imgs = $carousel.find('.carousel-cell img');
+// get transform property
+var docStyle = document.documentElement.style;
+var transformProp = typeof docStyle.transform == 'string' ?
+  'transform' : 'WebkitTransform';
+// get Flickity instance
+var flkty = $carousel.data('flickity');
+
+$carousel.on( 'scroll.flickity', function() {
+  flkty.slides.forEach( function( slide, i ) {
+    var img = $imgs[i];
+    var x = ( slide.target + flkty.x ) * -1/3;
+    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+  });
+});
+// end carousel
 

@@ -344,6 +344,8 @@
   }
   .box6 #myImg2 {
     position: relative;
+    width: 85%;
+    margin-top: -10%;
   }
   .box6 #myImg3 {
     display: none;
@@ -579,11 +581,22 @@
   .hs3:after {
       content: '';
     }
+  .hs3.tile > li,
+  .items {
+      scroll-snap-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+  }
+  .box14 .items img {
+      width: 90%;
+  }
   .box16 {
     padding-bottom: 10%;
   }
   .box16 img {
-  	width: 65%;
+  	width: 70%;
   	height: auto;
   	position: relative;
   	z-index: 1;
@@ -596,7 +609,7 @@
    	background-color: white;
    	padding: 4% 10% 6% 10%;
    	line-height: 1.6;
-   	margin-top: -29%;
+   	margin-top: -33%;
    	position: relative;
    	z-index: 10;
  }
@@ -612,6 +625,32 @@
   font-family: 'Cera Pro Light';
   font-size: 130%;
  }
+.box16 .hs4 {
+  display: grid;
+  grid-gap: calc(var(--gutter) / .66);
+  grid-template-columns: repeat(6, calc(115% - var(--gutter) * 2));
+  grid-template-rows: minmax(120px, 1fr);
+  
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+}
+/*.hs4:before,
+.hs4:after {
+      content: '';
+}*/
+.hs4 > li,
+.item {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
   .box17 p {
     font-family: 'Cera Pro Thin';
  	  font-size: 470%;
@@ -1073,6 +1112,7 @@
   font-size: 150%;
   font-family: 'Cera Pro Medium';
   letter-spacing: 1.5px;
+  line-height: 1.3;
 }
 .tiles .tile .details .info {
   line-height: 1.2;
