@@ -104,23 +104,7 @@ function myFunction2() {
 }
 // end nav bar
 
-// service section hover effect
 
-// $("img.myclass").click(function() {
-//      $("img.myclass").not(this).css("z-index", 0);
-//      $(this).css("z-index", 100);
-// });
-
-$( document ).ready(function() {
-  $("img.myclass").click(function() {
-     $("img.myclass").not(this).css("z-index", 0);
-     $(this).css("z-index", 100);
-});
-}
-
-
-
-// end of service section hover effect
 
 
 
