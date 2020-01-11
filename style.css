@@ -152,10 +152,11 @@
   cursor:pointer;
   color:#ffffff;
   font-family: 'Cera Pro Light';
-  height: 15px;
+  height: 18px;
   vertical-align: middle;
   margin-top: -5px;
-  
+  margin-left: 4%;
+  margin-right: -5%;
 }
 .myButton:hover {
   background:linear-gradient(to bottom, #ce0100 5%, #e02020 100%);
@@ -297,13 +298,10 @@
     padding-right: 10%;
     padding-bottom: 10%;
   }
-  .box3 h3 {
-  	font-size: 30px;
-  	text-align: left;
-  	margin-top: 30%;
-    color: #b6b8bd;
-  	font-family: 'Cera Pro Light';
-  	} 
+  .box3 h2 {
+    margin-left: -5%;
+    padding-top: 30%;
+  }
   .box3 p {
   	font-size: 30px;
     line-height: 1.6;
@@ -313,9 +311,17 @@
   }
   .box3 img {
   	float: left;
-  	width: 9%;
+  	width: 6%;
   	margin-right: 20px;
-  	margin-top: 20%;
+  	margin-top: 5%;
+     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  .box3 img:hover {
+   -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
   }
   .box4 img {
   	/*padding: 15% 10% 25% 0%;*/
@@ -362,6 +368,10 @@
     height: auto;
     margin-top: -7%;
     opacity: 1;
+  }
+  .slow {
+    opacity: 1;
+    width: 150%;
   }
   .box .box7 {
   	display: grid;
@@ -482,23 +492,35 @@
   .hs:after {
       content: '';
     }
-  .hs > li,
+  .hs .tile > li,
   .item {
       scroll-snap-align: center;
-      /*padding: calc(var(--gutter) / 2 * 1.5);*/
       display: flex;
       flex-direction: column;
-      /*justify-content: center;*/
       align-items: center;
-      background: white;
-      border-radius: 20px;
+      background: black;
   }
-  .item img {
-      width: 100%;
+  .box13 .tile .item img {
+      width: 80%;
   }
-  /*.item1 img {
-      width: 140%; 
-  }*/
+  .hs .tile img {
+    width: 50%;
+    height: auto;
+    padding-left: 25%;
+    padding-top: 10%;
+  }
+  .hs .tile .project2 {
+    width: 65%;
+    height: auto;
+    padding-left: 18%;
+    padding-top: 7%;
+  }
+  .hs .tile .project3 {
+    width: 130%;
+    height: auto;
+    padding-left: 0%;
+    padding-top: 12%;
+  }
   .hide-scroll {
       overflow-y: hidden;
       margin-bottom: calc(-.1 * var(--gutter));
@@ -525,25 +547,24 @@
   .hs1:after {
       content: '';
     }
-  .hs1 > li,
-  .item {
-      scroll-snap-align: center;
-      /*padding: calc(var(--gutter) / 2 * 1.5);*/
-      display: flex;
-      flex-direction: column;
-      /*justify-content: center;*/
-      align-items: center;
-      background: white;
-      border-radius: 20px;
-      filter: drop-shadow(20px 100px 60px #f5f5f5); 
+  .hs1 .tile img {
+    width: 35%;
+    height: auto;
+    padding-left: 32%;
+    padding-top: 6%;
   }
-  .item img {
-      width: 100%;
-      border-right: 80px;
+  .hs1 .tile .project7 {
+    width: 60%;
+    height: auto;
+    padding-left: 18%;
+    padding-top: 6%;
   }
- /* .box14 {
-    padding-bottom: 5%;
-  }*/
+  .hs1 .tile .project8 {
+    width: 50%;
+    height: auto;
+    padding-left: 24%;
+    padding-top: 13%;
+  }
   .box14 .hs3 {
       display: grid;
       grid-gap: calc(var(--gutter)/.66);
@@ -558,20 +579,6 @@
   .hs3:after {
       content: '';
     }
-  .hs3 > li,
-  .items {
-      scroll-snap-align: center;
-      /*padding: calc(var(--gutter) / 2 * 1.5);*/
-      display: flex;
-      flex-direction: column;
-      /*justify-content: center;*/
-      align-items: center;
-      background: white;
-      border-radius: 20px;
-  }
-  .items img {
-      width: 100%;
-  }
   .box16 {
     padding-bottom: 10%;
   }
@@ -583,8 +590,6 @@
   }
   .review {
    	border-radius: 40px;
-   	/*border: 1px black solid;*/
-    /*box-shadow: 5px 5px 5px 5px #f2f2f2;*/
     box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
    	margin-left: 15%;
    	margin-right: 15%;
@@ -1020,7 +1025,7 @@
   opacity: .99;
   overflow: hidden;
   position: relative;
-  border-radius: 3px;
+  border-radius: 20px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   img: hover;
   img-width: 70%;
@@ -1065,12 +1070,15 @@
 .tiles .tile .details .title {
   line-height: 1;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 150%;
+  font-family: 'Cera Pro Medium';
+  letter-spacing: 1.5px;
 }
 .tiles .tile .details .info {
   line-height: 1.2;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 80%;
+  font-family: 'Cera Pro Regular';
 }
 .tiles .tile:focus:before,
 .tiles .tile:focus span, .tiles .tile:hover:before,
