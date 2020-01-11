@@ -194,6 +194,105 @@
 }
 
 
+/*form */
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  margin-left: 25%;
+  margin-top: 10%;
+  border: 0px solid #f1f1f1;
+  border-radius: 50px;
+  font-family: 'Cera Pro Light';
+  z-index: 9;
+  box-shadow: 10px 10px 20px #d5d5d5, 0 0 2px #d2d2d2 ;
+
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fafafa;
+  text-align: center;
+  border-radius: 50px;
+}
+
+
+.form-container a{
+  float: right;
+  font-size: 200%;
+  opacity: .7;
+
+}
+.form-container a:hover{
+  float: right;
+  font-size: 200%;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.form-container h1{
+  font-family: 'Cera Pro medium';
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=email] {
+  width: 70%;
+  padding: 15px;
+  font-size: 16px;
+  padding-bottom: 20px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
+
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  /*background-color: #4CAF50;*/
+  color: white;
+  padding: 10px 10px 10px 10px;
+  /*border: none;*/
+  cursor: pointer;
+  width: 30%;
+  margin-bottom:10px;
+  opacity: 1;
+  background:linear-gradient(to bottom, #fe1a00 5%, #e02020 100%);
+  background-color:#fe1a00;
+  border-radius:8px;
+  font-size: 20px;
+  height: 40px;
+  font-family: 'Cera Pro Light';
+  
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  background:linear-gradient(to bottom, #ce0100 5%, #e02020 100%);
+  background-color:#ce0100;
+  color: white;
+}
+
+/*form end*/
+
+
   h2{
     font-family: 'Cera Pro Black';
     font-size: 60px;
@@ -636,10 +735,6 @@
   padding-bottom: calc(.75 * var(--gutter));
   margin-bottom: calc(-.25 * var(--gutter));
 }
-/*.hs4:before,
-.hs4:after {
-      content: '';
-}*/
 .hs4 > li,
 .item {
   scroll-snap-align: center;
@@ -1456,6 +1551,10 @@
       margin-top: 20%;
       padding-bottom: 2%;
       font-family: 'Cera Pro light';
+    }
+    .form-popup {
+      margin-left: 17%;
+      margin-top: 30%;
     }
   }
 

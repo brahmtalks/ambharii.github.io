@@ -41,6 +41,18 @@ function closeNav() {
   document.getElementById("drawer").style.width = "0";
 }
 
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  document.getElementsByClassName("grid")[0].style.WebkitFilter = 'blur(6px)';
+  document.getElementsByClassName("grid")[0].style.filter= 'blur(6px)';
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  document.getElementsByClassName("grid")[0].style.WebkitFilter = 'blur(0px)';
+  document.getElementsByClassName("grid")[0].style.filter= 'blur(0px)';
+}
+
 
   // JS tilt Effect
 function hoverTilt () {
@@ -93,26 +105,4 @@ function myFunction2() {
 // end nav bar
 
 
-// carousel
-var $carousel = $('.carousel').flickity({
-  imagesLoaded: true,
-  percentPosition: false,
-});
-
-var $imgs = $carousel.find('.carousel-cell img');
-// get transform property
-var docStyle = document.documentElement.style;
-var transformProp = typeof docStyle.transform == 'string' ?
-  'transform' : 'WebkitTransform';
-// get Flickity instance
-var flkty = $carousel.data('flickity');
-
-$carousel.on( 'scroll.flickity', function() {
-  flkty.slides.forEach( function( slide, i ) {
-    var img = $imgs[i];
-    var x = ( slide.target + flkty.x ) * -1/3;
-    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
-  });
-});
-// end carousel
 
