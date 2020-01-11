@@ -375,7 +375,7 @@
   }
   .box:nth-child(22),.box:nth-child(23),.box:nth-child(24),.box:nth-child(25) 
   {
-        grid-column: span 3;
+        grid-column: span 12;
   }
   .box:nth-child(26)
   {
@@ -792,7 +792,7 @@
   	width: 100%;
     height: auto;
     margin-top: -10%;
-}
+  }
   .blog2 p {
     margin-top: 3%;
     padding-bottom: 3%;
@@ -803,8 +803,32 @@
   .blog2 p span {
     font-family: 'Cera Pro medium';
   }
-  .box22 img {
-    margin-top: 5%;
+  .box21 {
+    margin-bottom: -3%;
+  }
+  .box22 .hs5 {
+  display: grid;
+  grid-gap: calc(var(--gutter) / .66);
+  grid-template-columns: repeat(6, calc(35% - var(--gutter) * 2));
+  grid-template-rows: minmax(20px, 1fr);
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+  } 
+  .hs5 > li,
+  .item {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / .66);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  }
+  .box22 .item img {
+    margin-top: -8%;
 	  width: 90%;
   	height: auto;
   	position: relative;
@@ -813,7 +837,7 @@
   }
   .team p{
     font-family: 'Cera Pro light';
-    font-size: 60%;
+    font-size: 70%;
   }
 
   .team h4{
@@ -827,9 +851,8 @@
   	border-radius: 4%;
     background-color: #ffffff;
     box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
-   	/*border: 1px lightgrey solid;*/
-   	margin-left: 15%;
-   	margin-right: 15%;
+   	margin-left: 5%;
+   	margin-right: 5%;
    	padding-left: 10%;
    	padding-right: 10%;
    	line-height: 1.6;
@@ -839,7 +862,7 @@
     padding-top: 5%;
     padding-bottom: 8%;
 }
-  .box23 img {
+ /* .box23 img {
     margin-top: 5%;
 	  width: 90%;
   	height: auto;
@@ -847,7 +870,7 @@
   	z-index: 1;
     z-index: 1;
     cursor: url("img/linkedin.png"), auto;
-}
+}*/
   .team2 {
     font-family: 'Cera Pro medium';
     font-size: 100%;
@@ -855,8 +878,8 @@
     background-color: #ffffff;
     box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
    	/*border: 1px lightgrey solid;*/
-   	margin-left: 15%;
-   	margin-right: 15%;
+   	margin-left: 5%;
+   	margin-right: 5%;
    	background-color: white;
    	padding-left: 10%;
    	padding-right: 10%;
@@ -867,15 +890,7 @@
     padding-top: 5%;
     padding-bottom: 8%;
 }
-  .box24 img {
-    margin-top: 5%;
-  	width: 90%;
-  	height: auto;
-  	position: relative;
-  	z-index: 1;
-    z-index: 1;
-    cursor: url("img/linkedin.png"), auto;
-}
+ 
   .team3 {
     font-family: 'Cera Pro medium';
     font-size: 100%;
@@ -883,8 +898,8 @@
     background-color: #ffffff;
     box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
    	/*border: 1px lightgrey solid;*/
-   	margin-left: 15%;
-   	margin-right: 15%;
+   	margin-left: 5%;
+   	margin-right: 5%;
    	background-color: white;
    	padding-left: 10%;
    	padding-right: 10%;
@@ -894,15 +909,6 @@
    	z-index: 10;
     padding-top: 5%;
     padding-bottom: 8%;
-}
-  .box25 img {
-    margin-top: 5%;
-	  width: 90%;
-  	height: auto;
-  	position: relative;
-  	z-index: 1;
-    z-index: 1;
-    cursor: url("img/linkedin.png"), auto;
 }
   .team4 {
     font-family: 'Cera Pro medium';
@@ -911,8 +917,8 @@
     background-color: #ffffff;
     box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
    	/*border: 1px lightgrey solid;*/
-   	margin-left: 15%;
-   	margin-right: 15%;
+   	margin-left: 5%;
+   	margin-right: 5%;
    	background-color: white;
    	padding-left: 10%;
    	padding-right: 10%;
@@ -920,6 +926,44 @@
    	margin-top: -8%;
    	position: relative;
    	z-index: 10;
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+ .team5 {
+    font-family: 'Cera Pro medium';
+    font-size: 100%;
+    border-radius: 4%;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
+    /*border: 1px lightgrey solid;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.6;
+    margin-top: -8%;
+    position: relative;
+    z-index: 10;
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+ .team6 {
+    font-family: 'Cera Pro medium';
+    font-size: 100%;
+    border-radius: 4%;
+    background-color: #ffffff;
+    box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
+    /*border: 1px lightgrey solid;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    line-height: 1.6;
+    margin-top: -8%;
+    position: relative;
+    z-index: 10;
     padding-top: 5%;
     padding-bottom: 8%;
 }
