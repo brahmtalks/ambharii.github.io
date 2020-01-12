@@ -4,26 +4,11 @@
     <title>Ambharii - Next-Generation Data and IT Consulting,Solutions & Services</title>
     <meta name="description" content="Empowering businesses with our cutting edge  Next-gen Technology Consulting and Solution Services that is easily and rapidly scalable, custom-built and secure. Reach us for demo of our use cases.">
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="main.js" ></script> 
-    <script src="jquery-3.4.1.js"></script>
-    <script>
-      $(window).load(function () {
-      $(".trigger_popup_fricc").click(function(){
-         $('.hover_bkgr_fricc').show();
-      });
-      $('.hover_bkgr_fricc').click(function(){
-          $('.hover_bkgr_fricc').hide();
-      });
-      $('.popupCloseButton').click(function(){
-          $('.hover_bkgr_fricc').hide();
-      });
-    </script>
+   
 </head>
 <body>
-
-    <div class="navbar sticky">
+    <div class="navbar sticky" style="display: none;">
         <!-- <img src="img/ambhariilabs.png" alt="logo"> -->
         <h3>Ambharii Labs</h3>
         <div id="header-right">
@@ -100,16 +85,16 @@
       <img src="img/service44.png" alt="Show/Hide Image" id="myImg4">
       <img src="img/888.png" alt="services_creative" id="myImg" >
   </div>
-  <div class="box box7">
+  <div class="box box7" onclick="serviceDance(0, false)">
       <div class="one"> 
         <div class="card">
-          <span class="hvr-bob" id="btn1"><img src="img/service11.png" alt="web_development"> </span>
-          <span class="hvr-bob" id="btn3"><img src="img/service22.png" class="img1" alt="app_development"> </span>
+          <span class="hvr-bob" id="btn1"><img src="img/service11.png" alt="web_development" onclick="serviceDance(1)"> </span>
+          <span class="hvr-bob" id="btn3"><img src="img/service22.png" class="img1" alt="app_development" onclick="serviceDance(2)"> </span>
         </div>
       </div>
       <div class="two"> 
-        <span class="hvr-bob" id="btn5"><img src="img/service33.png" alt="consulting"> </span>
-        <span class="hvr-bob" id="btn7"><img src="img/service44.png" class="img2" alt="data_science"> </span>
+        <span class="hvr-bob" id="btn5"><img src="img/service33.png" alt="consulting" onclick="serviceDance(3)"> </span>
+        <span class="hvr-bob" id="btn7"><img src="img/service44.png" class="img2" alt="data_science" onclick="serviceDance(4)"> </span>
       </div>
   </div>
   <div class="box" id="industries">
@@ -514,7 +499,7 @@
             <div class="team2 team">
                 <h3>Ganesh Hegde</h3>
                 <h4>CTO, Software Sevices</h4>
-                <p>A passionate Technologist with exemplary reasoning capabilities. A product of IIM, Bangalore who loves family, cricket and friends.</p>
+                <p>A passionate Technologist with exemplary reasoning capabilities. MBA from IIMB with B.E. background and loves family, cricket and friends.</p>
             </div>  
         </li>   
 
@@ -558,57 +543,6 @@
       </div>
   </div> 
 </main>
-<!-- services effect -->
-<!-- <script>
-  $('#btn1').click(function(){
-      $('#imgDiv').hide();
-  });
-    $('#btn2').click(function(){
-      $('#imgDiv').show();
-  });
-</script>
- --><!-- <script>
-  $('#btn3').click(function(){
-      $('#imgDiv').hide();
-  });
-    $('#btn4').click(function(){
-      $('#imgDiv').show();
-  });
-</script>
-<script>
-  $('#btn5').click(function(){
-      $('#imgDiv').hide();
-  });
-    $('#btn6').click(function(){
-      $('#imgDiv').show();
-  });
-</script>
-<script>
-  $('#btn7').click(function(){
-      $('#imgDiv').hide();
-  });
-    $('#8').click(function(){
-      $('#imgDiv').show();
-  });
-</script> -->
-<!-- end services effect -->
-<script>
-    window.onscroll = function() {myFunction()};   
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;   
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-</script>
-
 <script type="text/javascript" src="main.js"></script>
-
-<!-- <script src="jquery.js" ></script> 
-<script src="tilt.js"></script> -->
-<!-- <script src="tilt.jquery.js"></script> -->
 </body>
 </html>
