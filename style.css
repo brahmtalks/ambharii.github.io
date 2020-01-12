@@ -385,7 +385,7 @@
   .box1 img{
   	height: auto;
   	padding-top: 50px;
-    width: 8%;
+    width: 14%;
   }
   .box2 img {
   	margin-top: 6%;
@@ -424,7 +424,7 @@
   }
   .box4 img {
   	/*padding: 15% 10% 25% 0%;*/
-    width: 100%;
+    width: 70%;
     padding-top: 10%;
   }
   .box6 {
@@ -695,9 +695,10 @@
     padding-bottom: 10%;
   }
   .box16 img {
-  	width: 70%;
+  	width: 50%;
   	height: auto;
   	position: relative;
+
   	z-index: 1;
   }
   .review {
@@ -708,7 +709,7 @@
    	background-color: white;
    	padding: 4% 10% 6% 10%;
    	line-height: 1.6;
-   	margin-top: -33%;
+   	margin-top: -20%;
    	position: relative;
    	z-index: 10;
  }
@@ -964,6 +965,10 @@
     padding-top: 5%;
     padding-bottom: 8%;
 }
+.sharad img {
+  width: 200%;
+}
+
   .contact {
   	border-radius: 40px;
    	/*border: 1px black solid;*/
@@ -1522,9 +1527,6 @@
     .box17 {
       display: none;
     }
-    .box17 .reverse {
-      grid-column: 1/2;
-    }
     .box17 br {
       display: none;
     }
@@ -1547,8 +1549,8 @@
     .box21 {
       padding-bottom: 8%;
     }
-    .box23, .box24, .box25 {
-      display: none;
+    .box22 {
+      grid-column: span 12;
     }
     .contact .icons {
       padding-top: 3%;

@@ -93,13 +93,33 @@ $(document).ready(function(){
  });
 
 
-function myFunction1() {
-  var elmnt = document.getElementById("services");
+function myFunction2() {
+  var elmnt = document.getElementById("content");
   elmnt.scrollIntoView();
 }
 
 function myFunction2() {
+  var elmnt = document.getElementById("services");
+  elmnt.scrollIntoView();
+}
+
+function myFunction3() {
+  var elmnt = document.getElementById("industries");
+  elmnt.scrollIntoView();
+}
+
+function myFunction4() {
   var elmnt = document.getElementById("projects");
+  elmnt.scrollIntoView();
+}
+
+function myFunction5() {
+  var elmnt = document.getElementById("reviews");
+  elmnt.scrollIntoView();
+}
+
+function myFunction6() {
+  var elmnt = document.getElementById("team");
   elmnt.scrollIntoView();
 }
 // end nav bar

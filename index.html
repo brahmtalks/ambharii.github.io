@@ -29,8 +29,8 @@
         <div id="header-right">
             <div id="widenav">
                 
-                <a onclick="myFunction1()">services</a>
-                <a >projects</a>
+                <a onclick="myFunction2()">services</a>
+                <a onclick="myFunction4()">projects</a>
                 <a >blog</a>
                 <a onclick="openForm()" class="myButton" style="color: white;">Contact</a>
             </div>
@@ -43,13 +43,13 @@
         </div>
         <div id="drawer">
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-            <a >about</a>
-            <a onclick="myFunction1()">services</a>
-            <a >Industries</a>
-            <a >projects</a>
-            <a >reviews</a>
-            <a >blogs</a>
-            <a >team</a>
+            <a onclick="myFunction1()">About</a>
+            <a onclick="myFunction2()">Services</a>
+            <a onclick="myFunction3()">Industries</a>
+            <a onclick="myFunction4()">Projects</a>
+            <a onclick="myFunction5()">Reviews</a>
+            <a >Blogs</a>
+            <a onclick="myFunction6()">Team</a>
             <a onclick="openForm()">Contact</a>      
         </div>
 
@@ -75,7 +75,7 @@
     </div>
 <main class="grid">
   <div class="box box1">
-      <img src="img/newlogo.png" alt="ambharii_logo">
+      <img src="img/boldlogo.png" alt="ambharii_logo">
   </div>
   <div class="box box2">
       <img src="img/1111111.png" alt="home_creative">
@@ -88,9 +88,9 @@
       <a href="http://bit.ly/2MZxiPh" target="_blank"><img src="img/facebook.png" alt="facebook_logo"></a></span>
   </div>
   <div class="box box4">
-      <img src="img/1112.png" alt="about_creative">
+      <img src="img/round.png" alt="about_creative">
   </div>
-  <div class="box box5">
+  <div class="box box5" id="services">
       <h2>Pandora's Box</h2>
   </div>
   <div class="box box6">
@@ -112,7 +112,7 @@
         <span class="hvr-bob" id="btn7"><img src="img/service44.png" class="img2" alt="data_science"> </span>
       </div>
   </div>
-  <div class="box">
+  <div class="box" id="industries">
       <h2>Other Chapters</h2>
   </div>
   <div class="box box9">
@@ -132,9 +132,9 @@
   <div class="box box11 hover01">
       <a href="#" target="_blank"><figure><img src="img/7.png" alt="ambharii_retail"></figure></a>
       <h3>Ambharii Retail</h3>
-      <p>A revolutionary idea of digitizing the retail space by planting kiosks to make the sector more customer interactive. With Fitted USA, now every product is on your fingertips.</p>
+      <p>A revolutionary idea of digitizing the retail space by planting kiosks to make the sector more lively and customer interactive. With FittedUSA, now every product is on your fingertips.</p>
   </div>
-  <div class="box box12">
+  <div class="box box12" id="projects">
       <h2>Workfolio</h2>
   </div>
   <div class="box box13 tiles" id="box13">
@@ -176,7 +176,7 @@
             <a class="close" href="#box12">&times;</a>
             <div class="content">
               <p>Watch out for this space… Coming Soon</p>
-              <p>This is a NextGen software project for healthcare services. Our Architecture and UI/UX teams have been involved in MVP phase for this product. More details coming really soon...</p>
+              <p>This is a NextGen software project for healthcare services. Our Architecture and UI/UX teams have been involved in MVP phase for this product. We are developing a next-generation Mobile platform to transform the Customer Experience (Patients, Doctors, Nurses, and Providers) for increased Patient Engagement and Integrated Care (Value-based care). More details coming really soon...</p>
             </div>
           </div>
         </div>
@@ -402,14 +402,14 @@
       </div>
     </ul>
   </div>
-  <div class="box box15">
+  <div class="box box15" id="reviews">
       <h2></h2>
   </div>
 
     <div class="box16 box" id="box16">
       <ul class="hs4 no-scrollbar">
         <li class="item ">
-          <img src="img/testimonial.png" alt="review_one">
+          <img src="img/dumy1.png" alt="review_one">
           <div class="review">
               <h3>VP of Engineering, exp Reality</h3>
               <h4>Development and QA Services for Real Estate Company</h4>
@@ -417,7 +417,7 @@
           </div>
         </li>
         <li class="item">
-          <img src="img/testimonial.png" alt="review_one">
+          <img src="img/dumy1.png" alt="review_one">
           <div class="review">
               <h3>Co-founder, Renewable Energy</h3>
               <h4>Artificial Intelligence Support for Renewable Energy Tech Company </h4>
@@ -425,7 +425,7 @@
           </div>
         </li>
         <li class="item">
-          <img src="img/testimonial.png" alt="review_one">
+          <img src="img/dumy1.png" alt="review_one">
           <div class="review">
               <h3>Head of Data Management Team, Mobile Engagement Company</h3>
               <h4>Data Analytics Service for Mobile Engagement Company</h4>
@@ -433,7 +433,7 @@
           </div>
         </li>
         <li class="item">
-          <img src="img/testimonial.png" alt="review_one">
+          <img src="img/dumy1.png" alt="review_one">
           <div class="review">
               <h3>Senior Producer, Atari</h3>
               <h4>QA Services for Atari Mobile Games</h4>
@@ -442,13 +442,13 @@
         </li>
       </ul>
     </div>
-    <div class="box17 box reverse">
+    <div class="box17 box">
         <p>Your <br> Treasured<br> Words<br> That <br>Keep <br>Us<br> Going</p>
     </div>
   <div class="box box18">
       <h2>Our Journal</h2>
   </div>
-  <div class="box box19">
+  <div class="box box19" id="blogs">
       <div class="blog1 hovereffect">
           <img src="img/2.png" alt="blog1_creative">
           <div class="overlay">
@@ -477,7 +477,7 @@
           <img src="img/22.png" alt="blog2_creative">
       </div>
   </div> -->
-  <div class="box box21">
+  <div class="box box21" id="team">
       <h2>faces-in-Charge</h2>
   </div>
   <div class="box box22" id="box22">
@@ -501,7 +501,7 @@
         </li>
 
         <li class="item">
-          <a href="https://www.linkedin.com/in/geoffreycostigan/" target="_blank"><img src="img/david.jpg" alt="brahm_jot"></a>
+          <a href="https://www.linkedin.com/in/geoffreycostigan/" target="_blank"><img src="img/dumy.png" alt="brahm_jot"></a>
           <div class="team5 team">
               <h3>Geoffrey Costigan</h3>
               <h4>Enterprise Architecture</h4>
@@ -519,7 +519,7 @@
         </li>   
 
         <li class="item">
-          <a href="#box22" target="_blank"><img src="img/david.jpg" alt="brahm_jot"></a>
+          <a href="#box22" target="_blank"><img src="img/dumy.png" alt="brahm_jot"></a>
           <div class="team6 team">
               <h3>Swarup </h3>
               <h4>CTO, Embedded Systems</h4>
@@ -527,12 +527,12 @@
           </div>
         </li>
       
-        <li class="item">
-          <a href="https://drive.google.com/open?id=1LnPYTTRDcU15GQiKpSKFr6usmQE2qZoE" target="_blank"><img src="img/manjunath.jpg" alt="kanika_garg"></a>
+        <li class="item sharad">
+          <a href="https://drive.google.com/open?id=1LnPYTTRDcU15GQiKpSKFr6usmQE2qZoE" target="_blank"><img src="img/sharad.png" alt="kanika_garg"></a>
           <div class="team3 team">
               <h3>Sharad Nalawade</h3>
               <h4>President</h4>
-              <p> A software industry veteran in enterprise-architecture led digital transformation. B.Sc. in Physics & B.E. in EC from Karnataka University.</p>
+              <p> A software industry veteran in technology consulting and solution development. Former head of Enterprise Architecture in Accenture and other companies.</p>
           </div>
         </li>
 
