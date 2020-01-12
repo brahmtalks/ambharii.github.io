@@ -8,10 +8,10 @@ let service_images = [
   // default hathi image at 0
   'img/888.png',
   // left to right count order
-  'img/analytics.png',
-  'img/analytics.png',
-  'img/analytics.png',
-  'img/analytics.png',
+  'img/121.png',
+  'img/13.png',
+  'img/10.png',
+  'img/12.png',
 ];
 
 
@@ -119,7 +119,7 @@ $(document).ready(function () {
 });
 
 
-function myFunction2() {
+function myFunction1() {
   var elmnt = document.getElementById("content");
   elmnt.scrollIntoView();
 }
@@ -140,7 +140,7 @@ function myFunction4() {
 }
 
 function myFunction5() {
-  var elmnt = document.getElementById("reviews");
+  var elmnt = document.getElementById("box16");
   elmnt.scrollIntoView();
 }
 
@@ -178,6 +178,57 @@ const serviceDance = (ch) => {
   }, 200)
 }
 
+//Contact Form Validation
+function contactFormValidation () {
+  var activeForm = $('.form-validation');
+  if(activeForm.length){
+    activeForm.validate({ // initialize the plugin
+      rules: {
+        sub: {
+          required: true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true
+        }
+      },
+      submitHandler: function(form) {
+                $(form).ajaxSubmit({
+                    success: function() {
+                        $('.form-validation :input').attr('disabled', 'disabled');
+                        activeForm.fadeTo( "slow", 1, function() {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor','default');
+                            $('#alert-success').fadeIn();
+                        });
+                    },
+                    error: function() {
+                        activeForm.fadeTo( "slow", 1, function() {
+                            $('#alert-error').fadeIn();
+                        });
+                    }
+                });
+            }
+        });
+  }
+}
+
+
+// Close suddess Alert
+function closeSuccessAlert () {
+  var closeButton = $ (".closeAlert");
+  if(closeButton.length) {
+      closeButton.on('click', function(){
+        $(".alert-wrapper").fadeOut();
+      });
+      closeButton.on('click', function(){
+        $(".alert-wrapper").fadeOut();
+      })
+  }
+}
 
 
 

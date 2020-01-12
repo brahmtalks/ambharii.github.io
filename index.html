@@ -28,31 +28,32 @@
         </div>
         <div id="drawer">
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
-            <a onclick="myFunction1()">About</a>
-            <a onclick="myFunction2()">Services</a>
+            <a onclick="myFunction1()">about</a>
+            <a onclick="myFunction2()">services</a>
             <a onclick="myFunction3()">Industries</a>
-            <a onclick="myFunction4()">Projects</a>
-            <a onclick="myFunction5()">Reviews</a>
-            <a >Blogs</a>
-            <a onclick="myFunction6()">Team</a>
+            <a onclick="myFunction4()">projects</a>
+            <a onclick="myFunction5()">reviews</a>
+            <a >blogs</a>
+            <a onclick="myFunction6()">team</a>
             <a onclick="openForm()">Contact</a>      
         </div>
 
         <div class="form-popup" id="myForm">
-          <form action="/action_page.php" class="form-container">
+          <form action="inc/sendemail.php" class="contact-us-form form-validation form-container" auto-complete="off" method="POST">
+          <!-- <form action="/action_page.php" class="form-container"> -->
             <a onclick="closeForm()">&times;</a>
             <h1>Contact</h1> 
 
             <!-- <label for="email"><b>Name</b></label> -->
-            <input type="text" placeholder="Name*" name="email" required>
+            <input value="" id="name" type="text" class="inputs" placeholder="Name*" name="email" required>
 
             <!-- <label for="psw"><b>Email</b></label> -->
-            <input type="email" placeholder="Email* " name="psw" required>
+            <input value="" id="email" type="email" class="inputs" placeholder="Email* " name="psw" required>
           
             <!-- <label for="psw"><b>Number</b></label> -->
-            <input type="text" placeholder="Number*" name="psw" required>
+            <input value="" id="number" type="text" class="inputs" placeholder="Number*" name="psw" required>
             
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" value="SEND MESSAGE" class="btn">Submit</button>
 
             <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
           </form>
@@ -63,7 +64,7 @@
       <img src="img/boldlogo.png" alt="ambharii_logo">
   </div>
   <div class="box box2">
-      <img src="img/1111111.png" alt="home_creative">
+      <img src="img/99.png" alt="home_creative">
   </div>
   <div class="box box3" id="content">
       <h2> Our Story </h2>
@@ -75,10 +76,10 @@
   <div class="box box4">
       <img src="img/round.png" alt="about_creative">
   </div>
-  <div class="box box5" id="services">
+  <div class="box box5">
       <h2>Pandora's Box</h2>
   </div>
-  <div class="box box6">
+  <div class="box box6" id="services">
       <img src="img/service11.png" alt="Show/Hide Image" id="myImg1">
       <img src="img/service22.png" alt="Show/Hide Image" id="myImg2">
       <img src="img/analytics.png" alt="Show/Hide Image" id="myImg3">
@@ -387,7 +388,7 @@
       </div>
     </ul>
   </div>
-  <div class="box box15" id="reviews">
+  <div class="box box15">
       <h2></h2>
   </div>
 
@@ -427,13 +428,13 @@
         </li>
       </ul>
     </div>
-    <div class="box17 box">
+    <div class="box17 box reverse">
         <p>Your <br> Treasured<br> Words<br> That <br>Keep <br>Us<br> Going</p>
     </div>
   <div class="box box18">
       <h2>Our Journal</h2>
   </div>
-  <div class="box box19" id="blogs">
+  <div class="box box19">
       <div class="blog1 hovereffect">
           <img src="img/2.png" alt="blog1_creative">
           <div class="overlay">
@@ -468,7 +469,7 @@
   <div class="box box22" id="box22">
     <ul class="hs5 no-scrollbar">
         <li class="item">
-          <a href="https://www.linkedin.com/in/anilsrinivasprasad" target="_blank"><img src="img/anil.jpg" alt="anil_arora"></a>
+          <a href="#"><img src="img/anil.jpg" alt="anil_arora"></a>
             <div class="team1 team">
                 <h3>Anil Prasad</h3>
                 <h4> Founder and CEO</h4>
@@ -477,16 +478,16 @@
         </li>   
       
        <li class="item">
-          <a href="​https://www.linkedin.com/in/davidmcdonell" target="_blank"><img src="img/david.jpg" alt="brahm_jot"></a>
+          <a href="​#"><img src="img/david.jpg" alt="brahm_jot"></a>
           <div class="team4 team">
-              <h3>David McDonell</h3>
+             <h3>David McDonell</h3>
               <h4>Sales and Partner Relations</h4>
               <p> Focused on SmartTech and IntelligentData to accelerate Knowledge-powered applications and digital Ux within business enterprises.</p>
           </div>
         </li>
 
         <li class="item">
-          <a href="https://www.linkedin.com/in/geoffreycostigan/" target="_blank"><img src="img/dumy.png" alt="brahm_jot"></a>
+          <a href="#"><img src="img/dumy.png" alt="brahm_jot"></a>
           <div class="team5 team">
               <h3>Geoffrey Costigan</h3>
               <h4>Enterprise Architecture</h4>
@@ -495,25 +496,25 @@
         </li>
 
         <li class="item">
-          <a href="https://www.linkedin.com/in/ganesh-hegde-6862251" target="_blank"><img src="img/ganesh.jpg" alt="riya_aurora"></a>
+          <a href="#"><img src="img/ganesh.jpg" alt="riya_aurora"></a>
             <div class="team2 team">
                 <h3>Ganesh Hegde</h3>
                 <h4>CTO, Software Sevices</h4>
-                <p>A passionate Technologist with exemplary reasoning capabilities. MBA from IIMB with B.E. background and loves family, cricket and friends.</p>
+                <p>A passionate Technologist with exemplary reasoning capabilities. A product of IIM, Bangalore who loves family, cricket and friends.</p>
             </div>  
         </li>   
 
         <li class="item">
-          <a href="#box22" target="_blank"><img src="img/dumy.png" alt="brahm_jot"></a>
+          <a href="#" target="_blank"><img src="img/dumy.png" alt="brahm_jot"></a>
           <div class="team6 team">
-              <h3>Swarup </h3>
+             <h3>Swarup </h3>
               <h4>CTO, Embedded Systems</h4>
               <p> Technology and Delivery leader with decades of experience in developing Embedded products and development, and hone at testing services.</p>
           </div>
         </li>
       
-        <li class="item sharad">
-          <a href="https://drive.google.com/open?id=1LnPYTTRDcU15GQiKpSKFr6usmQE2qZoE" target="_blank"><img src="img/sharad.png" alt="kanika_garg"></a>
+        <li class="item">
+          <a href="#"><img src="img/sharad1.jpg" alt="kanika_garg"></a>
           <div class="team3 team">
               <h3>Sharad Nalawade</h3>
               <h4>President</h4>

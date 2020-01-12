@@ -388,7 +388,7 @@
     width: 14%;
   }
   .box2 img {
-  	margin-top: 6%;
+  	margin-top: 3%;
   	margin-bottom: 5%;
     width: 82%;
   }
@@ -695,10 +695,9 @@
     padding-bottom: 10%;
   }
   .box16 img {
-  	width: 50%;
+  	width: 70%;
   	height: auto;
   	position: relative;
-
   	z-index: 1;
   }
   .review {
@@ -709,7 +708,7 @@
    	background-color: white;
    	padding: 4% 10% 6% 10%;
    	line-height: 1.6;
-   	margin-top: -20%;
+   	margin-top: -33%;
    	position: relative;
    	z-index: 10;
  }
@@ -831,7 +830,7 @@
   	height: auto;
   	position: relative;
   	z-index: 1;
-    cursor: url("img/linkedin.png"), auto;
+    /*cursor: url("img/linkedin.png"), auto;*/
   }
   .team p{
     font-family: 'Cera Pro light';
@@ -965,10 +964,6 @@
     padding-top: 5%;
     padding-bottom: 8%;
 }
-.sharad img {
-  width: 200%;
-}
-
   .contact {
   	border-radius: 40px;
    	/*border: 1px black solid;*/
@@ -1527,6 +1522,9 @@
     .box17 {
       display: none;
     }
+    .box17 .reverse {
+      grid-column: 1/2;
+    }
     .box17 br {
       display: none;
     }
@@ -1549,8 +1547,8 @@
     .box21 {
       padding-bottom: 8%;
     }
-    .box22 {
-      grid-column: span 12;
+    .box23, .box24, .box25 {
+      display: none;
     }
     .contact .icons {
       padding-top: 3%;
