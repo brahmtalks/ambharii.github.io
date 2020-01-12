@@ -1547,6 +1547,9 @@
     .box21 {
       padding-bottom: 8%;
     }
+    .box22 li{
+      width: 100%;
+    }
     .box23, .box24, .box25 {
       display: none;
     }
