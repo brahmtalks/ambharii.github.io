@@ -1,3 +1,19 @@
+// state var
+let services_touched = false;
+let tt = false;
+
+
+// service image paths
+let service_images = [
+  // default hathi image at 0
+  'img/888.png',
+  // left to right count order
+  'img/analytics.png',
+  'img/analytics.png',
+  'img/analytics.png',
+  'img/analytics.png',
+];
+
 
 // JS tilt Effect
 // function hoverTilt () {
@@ -125,6 +141,22 @@ function myFunction2() {
 //   }
 // }
 
+
+
+const serviceDance = (ch) => {
+  if (tt) {
+    return;
+  }
+  if (!document.getElementById('myImg').src.includes(service_images[ch])) {
+    $('#myImg').hide();
+    document.getElementById('myImg').src = service_images[ch];
+    $('#myImg').fadeIn(800);
+  }
+  tt = true;
+  setTimeout(() => {
+    tt = false;
+  }, 200)
+}
 
 
 
