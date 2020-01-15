@@ -48,6 +48,25 @@
   font-style: normal;
   }
 
+  html, body {
+    scroll-behavior: smooth;
+  }
+
+  .bloga {
+    margin: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.137);
+    border-radius: 20px;
+    transition: box-shadow 0.4s;
+  }
+
+  .bloga:hover {
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.253);
+  }
+
+  /* AA */
+  /*  */
+
 
   /* header */
 
@@ -78,6 +97,11 @@
   font-size: 20px;
 }
 
+.slickkk div li img {
+  width: 50% !important;
+
+}
+
 
 #mobnav {
     display: none;
@@ -89,8 +113,6 @@
     margin-top: -50px;
     
 }
-
-
 
 #widenav a {
     font-size: 115%;
@@ -208,8 +230,6 @@
   font-family: 'Cera Pro Light';
   z-index: 9;
   box-shadow: 10px 10px 20px #d5d5d5, 0 0 2px #d2d2d2 ;
-
-
 }
 
 /* Add styles to the form container */
@@ -433,9 +453,8 @@
   .box6 img {
     padding-top: 6%;
   }
-  .box6 #myImg {
-    position: relative;
-    width: 85%;
+  .box6 #hathi {
+    width: 45%;
     margin-top: -10%;
   }
   .box6 #myImg1 {
@@ -826,7 +845,7 @@
   }
   .box22 .item img {
     margin-top: -8%;
-	  width: 90%;
+	  width: 100%;
   	height: auto;
   	position: relative;
   	z-index: 1;
@@ -848,8 +867,8 @@
   	border-radius: 4%;
     background-color: #ffffff;
     box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
-   	margin-left: 5%;
-   	margin-right: 5%;
+   	/* margin-left: 5%; */
+   	/* margin-right: 5%; */
    	padding-left: 10%;
    	padding-right: 10%;
    	line-height: 1.6;
@@ -1604,6 +1623,11 @@
     .form-popup {
       margin-left: 17%;
       margin-top: 30%;
+    }
+
+    .bloga {
+      margin: 60px !important;
+      margin-bottom: 150px !important;
     }
   }
 
