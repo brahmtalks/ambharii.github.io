@@ -48,6 +48,18 @@
   font-style: normal;
   }
 
+  .bloga {
+    margin: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.137);
+    border-radius: 20px;
+    transition: box-shadow 0.4s;
+  }
+
+  .bloga:hover {
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.253);
+  }
+
   /* AA */
   /*  */
 
@@ -1607,6 +1619,11 @@
     .form-popup {
       margin-left: 17%;
       margin-top: 30%;
+    }
+
+    .bloga {
+      margin: 60px !important;
+      margin-bottom: 150px !important;
     }
   }
 
