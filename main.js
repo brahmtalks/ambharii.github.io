@@ -116,6 +116,27 @@ $(document).ready(function () {
 
     return elemTop <= docViewBottom;
   }
+
+  $('.slickk').slick({
+    accessibility: false,
+    infinite: true,
+    slidesToShow: 3,
+    autoplay: true,
+    arrows: false,
+    swipeToSlide: true,
+    infinite: false
+  });
+
+  $('.slickkk').slick({
+    accessibility: false,
+    infinite: true,
+    slidesToShow: 3,
+    autoplay: true,
+    arrows: false,
+    swipeToSlide: true
+  });
+
+  
 });
 
 
@@ -125,7 +146,7 @@ function myFunction1() {
 }
 
 function myFunction2() {
-  var elmnt = document.getElementById("services");
+  var elmnt = document.getElementById("box5");
   elmnt.scrollIntoView();
 }
 
@@ -135,7 +156,7 @@ function myFunction3() {
 }
 
 function myFunction4() {
-  var elmnt = document.getElementById("projects");
+  var elmnt = document.getElementById("box12");
   elmnt.scrollIntoView();
 }
 
@@ -160,6 +181,7 @@ function myFunction6() {
 //     navbar.classList.remove("sticky");
 //   }
 // }
+
 
 
 
