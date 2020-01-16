@@ -48,12 +48,6 @@
   font-style: normal;
   }
 
-
-  html, body {
-    scroll-behavior: smooth;
-  }
-
-
   .bloga {
     margin: 30px;
     margin-bottom: 40px;
