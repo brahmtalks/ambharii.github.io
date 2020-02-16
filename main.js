@@ -121,8 +121,9 @@ $(document).ready(function () {
     accessibility: false,
     infinite: true,
     slidesToShow: 3,
-    autoplay: true,
-    arrows: false,
+    autoplay: false,
+    arrows: true,
+    dots: true,
     swipeToSlide: true,
     infinite: false
   });
@@ -130,15 +131,35 @@ $(document).ready(function () {
   $('.slickkk').slick({
     accessibility: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     autoplay: true,
-    arrows: false,
+    arrows: true,
     swipeToSlide: true
+  });
+
+  $('.slickkkk').slick({
+    accessibility: false,
+    infinite: true,
+    slidesToShow: 1,
+    autoplay: true,
+    arrows: true,
+    dots: true,
+    swipeToSlide: true,
+    
   });
 
   
 });
 
+function myFunction0() {
+  var elmnt = document.getElementById("body");
+  elmnt.scrollIntoView();
+}
+
+function myFunction1() {
+  var elmnt = document.getElementById("body");
+  elmnt.scrollIntoView();
+}
 
 function myFunction1() {
   var elmnt = document.getElementById("content");

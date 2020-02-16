@@ -1,3 +1,12 @@
+html {
+-ms-overflow-style: none;
+}
+
+body,html{
+  scroll-behavior: smooth;
+}
+
+
   @font-face {
   font-family: 'Cera Pro Regular';
   src: url('font/CeraPro-Regular.eot');
@@ -49,23 +58,6 @@
   }
 
 
-  html, body {
-    scroll-behavior: smooth;
-  }
-
-
-  .bloga {
-    margin: 30px;
-    margin-bottom: 40px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.137);
-    border-radius: 20px;
-    transition: box-shadow 0.4s;
-  }
-
-  .bloga:hover {
-    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.253);
-  }
-
   /* AA */
   /*  */
 
@@ -84,7 +76,7 @@
   }
   
   .navbar a:hover {
-    font-size: 120%;
+    font-size: 110%;
     /*overflow: hidden;*/
   }
   
@@ -92,11 +84,14 @@
 /* #navbar img {
     width: 140px;
 } */
-.navbar h3{
+.navbar h3 a{
   font-family: 'Cera Pro Medium';
   padding-left: 70px;
   color: rgb(90, 90, 90);
   font-size: 20px;
+  cursor: pointer;
+  
+  
 }
 
 .slickkk div li img {
@@ -244,13 +239,13 @@
 }
 
 
-.form-container a{
+.form-container .cross{
   float: right;
   font-size: 200%;
   opacity: .7;
 
 }
-.form-container a:hover{
+.form-container .cross:hover{
   float: right;
   font-size: 200%;
   opacity: 1;
@@ -280,16 +275,17 @@
   background-color: #ddd;
   outline: none;
 }
-
 /* Set a style for the submit/login button */
-.form-container .btn {
+
+#myForm form .btn {
   /*background-color: #4CAF50;*/
   color: white;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 30px 10px 30px;
   /*border: none;*/
   cursor: pointer;
   width: 30%;
-  margin-bottom:10px;
+  margin-top: 40px;
+  margin-bottom:40px;
   opacity: 1;
   background:linear-gradient(to bottom, #fe1a00 5%, #e02020 100%);
   background-color:#fe1a00;
@@ -409,15 +405,16 @@
   	padding-top: 50px;
     width: 14%;
   }
-  .box2 img {
-  	margin-top: 3%;
+  .box2 video {
+  	margin-top: 0%;
   	margin-bottom: 5%;
     width: 82%;
   }
   .box3{
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 30%;
+    margin-top: -15%;
   }
   .box3 h2 {
     margin-left: -5%;
@@ -444,16 +441,18 @@
    -ms-filter: none;
    filter: none;
   }
-  .box4 img {
+  .box4 video {
   	/*padding: 15% 10% 25% 0%;*/
-    width: 70%;
-    padding-top: 10%;
+    width: 100%;
+    padding-top: 0%;
   }
   .box6 {
     position: relative;
+    padding-bottom: 10%;
   }
   .box6 img {
     padding-top: 6%;
+    width: 75%;
   }
   .box6 #hathi {
     width: 45%;
@@ -499,22 +498,25 @@
   	display: grid;
   	grid-template-columns: 100px 100px;
   	grid-template-rows: auto auto;
-  	grid-gap: 10px;
+    grid-gap: 10px;
+  
   }
   .box7 img {
-    width: 100%;
+    width: 80%;
+    
   }
   .box7 .one {
-    margin-bottom: 5%;
+    margin-bottom: 6%;
+    margin-top: 8%;
   }
   .one .img1 {
-    margin-left: 12%;
+    margin-left: 0%;
   }
   .two {
     padding-bottom: 10%;
   }
   .two .img2 {
-    margin-left: 12%;
+    margin-left: 0%;
   }
   /*.one img {
   	float: left;
@@ -534,9 +536,9 @@
   .two .img2 {
   	margin-top: -20%;
   }*/
-  .box9 img {
-  	width: 68%;
-    margin-top: -8%;
+  .box9 a figure img {
+  	width: 58%;
+    margin-top: 8%;
   }
   .box9 h3 {
     font-family: 'Cera Pro Medium';
@@ -552,11 +554,11 @@
   	padding-bottom: 10%;
     font-size: 110%;
     line-height: 1.6;
-    text-align: justify;
+    text-align: center;
   }
-  .box10 img {
-  	width: 68%;
-    margin-top: -8%;
+  .box10 a figure img {
+  	width: 58%;
+    margin-top: 8%;
   }
   .box10 h3 {
     font-family: 'Cera Pro Medium';
@@ -571,11 +573,12 @@
   	padding-bottom: 10%;
     font-size: 110%;
     line-height: 1.6;
-    text-align: justify;
+    text-align: center;
   }
-  .box11 img {
-  	width: 68%;
-    margin-top: -8%;
+  .box11 a figure img {
+  	width: 58%;
+    margin-top: 8%;
+    
   }
   .box11 h3 {
     font-family: 'Cera Pro Medium';
@@ -591,8 +594,13 @@
   	padding-bottom: 10%;
     font-size: 110%;
     line-height: 1.6;
-    text-align: justify;
+    text-align: center;
+    
   }
+  .box12{
+    padding-top: 5%;
+  }
+
   :root {
     --gutter: 20px;
   }
@@ -714,11 +722,15 @@
   }
   .box16 {
     padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .box16 img {
   	width: 70%;
   	height: auto;
-  	position: relative;
+    position: relative;
+    margin: 0 auto;
+    
   	z-index: 1;
   }
   .review {
@@ -743,18 +755,21 @@
  }
  .review p {
   font-family: 'Cera Pro Light';
-  font-size: 130%;
+  font-size: 100%;
  }
 .box16 .hs4 {
   display: grid;
   grid-gap: calc(var(--gutter) / .66);
-  grid-template-columns: repeat(6, calc(115% - var(--gutter) * 2));
+  grid-template-columns: repeat(6, calc(100% - var(--gutter) * 2));
   grid-template-rows: minmax(120px, 1fr);
-  
   overflow-x: scroll;
+  overflow-y: hidden;
   scroll-snap-type: x proximity;
   padding-bottom: calc(.75 * var(--gutter));
   margin-bottom: calc(-.25 * var(--gutter));
+ 
+  
+ 
 }
 .hs4 > li,
 .item {
@@ -766,7 +781,11 @@
   align-items: center;
   background: #fff;
   border-radius: 8px;
+
+  
 }
+
+
   .box17 p {
     font-family: 'Cera Pro Thin';
  	  font-size: 470%;
@@ -783,10 +802,17 @@
    	margin-bottom: 20%;
     box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
 }*/
+   
+/* box19 */
+  .box18 h2{
+    padding-bottom: 5%;
+  }
   .blog1 img {
   	width: 100%;
   	height: auto;
     margin-top: -10%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
   .blog1 p {
     margin-top: 3%;
@@ -810,6 +836,8 @@
   	width: 100%;
     height: auto;
     margin-top: -10%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
   }
   .blog2 p {
     margin-top: 3%;
@@ -821,8 +849,24 @@
   .blog2 p span {
     font-family: 'Cera Pro medium';
   }
+
+  .bloga {
+    /* margin: 30px; */
+    margin: 0 auto;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.137);
+    border-radius: 40px;
+    transition: box-shadow 0.4s;
+    width: 70%;
+  }
+
+  .bloga:hover {
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.253);
+  }
+
   .box21 {
     margin-bottom: -3%;
+    margin-top: 5%;
   }
   .box22 .hs5 {
   display: grid;
@@ -846,12 +890,19 @@
   border-radius: 8px;
   }
   .box22 .item img {
-    margin-top: -8%;
-	  width: 100%;
-  	height: auto;
+    margin: 0 auto;
+	  width: 70%;
+    height: auto;
+    text-align: center;
   	position: relative;
-  	z-index: 1;
+    z-index: 1;
+    -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(90%);
     /*cursor: url("img/linkedin.png"), auto;*/
+  }
+  .box22 .item img:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
   }
   .team p{
     font-family: 'Cera Pro light';
@@ -992,7 +1043,7 @@
    	margin-left: 10%;
    	margin-right: 10%;
    	background-color: white;
-   	margin-top: 20%;
+   	margin-top: 10%;
    	margin-bottom: 8%;
 }
   .contact .icons {
@@ -1008,17 +1059,19 @@
 	  width: 12%;
     margin-right: 7%;
 }
-  .icons button {
+  .icons .btn1 {
     font-family: 'Cera Pro medium';
     color: white;
-    background-color: #e02020;
+    background:linear-gradient(to bottom, #fe1a00 5%, #e02020 100%);
+  background-color:#fe1a00;
     font-size: 115%;
   	margin-right: -48%;
-  	padding: 1.3%;
+  	padding: 1%;
   	padding-left: 3%;
   	padding-right: 3%;
-    border-radius: 40px;
+    border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
   .contact .info .mail {
 	  font-size: 260%;
@@ -1090,16 +1143,19 @@
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
-/* Zoom In #2 */
-.hover01 figure img {
-  width: 78%;
-  height: auto;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-.hover01 figure:hover img {
-  width: 81%;
-}
+
+
+  /* Zoom In #2 */
+  .hover01 figure img {
+    width: 58%;
+    height: auto;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .hover01 figure:hover img {
+    width: 62%;
+  }
+
 /*project popup*/
 .hover_bkgr_fricc{
     background:rgba(0,0,0,.4);
@@ -1288,7 +1344,7 @@
   opacity: 1;
 }
 .tiles .tile:focus:before, .tiles .tile:hover:before {
-  top: 50%;
+  top: 65%;
 }
 .tiles .tile:focus span, .tiles .tile:hover span {
   top: 0;
@@ -1489,7 +1545,7 @@
     /* End of header */
     .box1 img{
       width: 20%;
-      padding-top: 100px;
+      padding-top: 150px;
     }
     .box2 img {
       width: 100%;
@@ -1631,6 +1687,25 @@
       margin: 60px !important;
       margin-bottom: 150px !important;
     }
+  }
+
+  .slick-prev, .slick-next{
+    background: #c4c4c4 !important;
+    border-radius: 50% !important;
+    opacity: 0.8;
+    color: white;
+
+
+  } 
+
+  .slick-prev:hover , .slick-next:hover, .slick-next:focus {
+    background: #e3e3e3 !important;
+    color: white;
+
+  }
+
+  .slick-disabled {
+    display: none !important;
   }
 
 

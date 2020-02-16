@@ -8,14 +8,15 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+  <link rel="icon" href="img/favicon.ico" type="image/ico" sizes="32x32">
 </head>
 
-<body>
+<body id="body">
   <div class="navbar sticky" style="display: none;">
     <!-- <img src="img/ambhariilabs.png" alt="logo"> -->
-    <h3>Ambharii Labs</h3>
+    <h3><a onclick="myFunction0()">Ambharii Labs</a></h3>
     <div id="header-right">
       <div id="widenav">
 
@@ -49,7 +50,7 @@
       <form action="inc/sendemail.php" class="contact-us-form form-validation form-container" auto-complete="off"
         method="POST">
         <!-- <form action="/action_page.php" class="form-container"> -->
-        <a onclick="closeForm()">&times;</a>
+        <a onclick="closeForm()" class="cross">&times;</a>
         <h1>Contact</h1>
 
         <!-- <label for="email"><b>Name</b></label> -->
@@ -60,8 +61,8 @@
 
         <!-- <label for="psw"><b>Number</b></label> -->
         <input value="" id="number" type="text" class="inputs" placeholder="Number*" name="psw" required>
-
-        <button type="submit" value="SEND MESSAGE" class="btn">Submit</button>
+            <br>
+        <a type="submit" value="SEND MESSAGE" class="btn">Submit</a>
 
         <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
       </form>
@@ -72,7 +73,10 @@
       <img src="img/boldlogo.png" alt="ambharii_logo" style="width:14%;">
     </div>
     <div class="box box2">
-      <img src="img/99.png" alt="home_creative" style="margin-top:3%;">
+      <!-- <img src="img/99.png" alt="home_creative" style="margin-top:3%;"> -->
+      <video id="intro-video" autoplay loop muted playsinline class="video1">
+        <source src="img/mainani.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="box box3" id="content">
       <h2> Our Story </h2>
@@ -85,7 +89,10 @@
         <a href="http://bit.ly/2MZxiPh" target="_blank"><img src="img/facebook.png" alt="facebook_logo"></a></span>
     </div>
     <div class="box box4">
-      <img src="img/round.png" alt="about_creative" style="width:75%;">
+      <!-- <img src="img/round.png" alt="about_creative" style="width:75%;"> -->
+      <video id="intro-video" autoplay loop muted playsinline class="video1">
+        <source src="img/animation.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="box box5" id="box5">
       <h2>Pandora's Box</h2>
@@ -115,35 +122,30 @@
     <div class="box" id="industries">
       <h2>Other Chapters</h2>
     </div>
-    <div class="box box9">
-      <div class="hover01">
-        <a href="#" target="_blank">
+    <div class="box box9 hover01">
+        <a href="https://healthmatey.com/" target="_blank">
           <figure><img src="img/5.png" alt="ambharii_health"></figure>
         </a>
-      </div>
-      <div>
         <h3>Ambharii Health</h3>
-        <p>With a vision of creating a new-age digital healthcare platform and educating the differently abled masses
-          with social skills, health matey is committed to bring smiles to the faces of our planet.</p>
-      </div>
+        <p>Creating a new-age digital healthcare platform and educating the differently abled masses
+          with social skills.</p>
     </div>
     <div class="box box10 hover01">
-
-      <a href="emb/index.html" target="_blank">
-
+      <a href="#" target="_blank">
         <figure><img src="img/6.png" alt="ambharii_embedded_systems"></figure>
       </a>
       <h3>Ambharii Embedded <br>Systems</h3>
-      <p>From common household appliances to complex industrial automation tools, we infuse embedded solutions to almost
-        every system, making your tasks effortless, like never before. </p>
+      <p>From common household appliances to complex industrial automation tools, we infuse embedded 
+        solutions to almost every system. </p>
     </div>
     <div class="box box11 hover01">
       <a href="#" target="_blank">
         <figure><img src="img/7.png" alt="ambharii_retail"></figure>
       </a>
       <h3>Ambharii Retail</h3>
-      <p>A revolutionary idea of digitizing the retail space by planting kiosks to make the sector more lively and
-        customer interactive. With FittedUSA, now every product is on your fingertips.</p>
+      <p>An idea of digitizing the retail space by planting kiosks to make the sector more
+         lively and
+        customer interactive.</p>
     </div>
     <div class="box box12" id="box12">
       <h2>Workfolio</h2>
@@ -415,24 +417,26 @@
     </div>
 
     <div class="box box14" id="box14">
-      <div class="slickkk">
-        <div>
-          <li class="items"><img src="img/client1.png" alt="datrstax"></li>
-        </div>
-        <div>
-          <li class="items"><img src="img/client2.png" alt="IBM"></li>
-        </div>
-        <div>
-          <li class="items"><img src="img/client3.png" alt="MAPR"></li>
-        </div>
-        <div>
-          <li class="items"><img src="img/client4.png" alt="Hortonworks"></li>
-        </div>
-        <div>
-          <li class="items"><img src="img/client5.png" alt="cloudera"></li>
-        </div>
-        <div>
-          <li class="items"><img src="img/client1.png" alt="datrstax"></li>
+      <div style="margin: 30px;">
+        <div class="slickkk">
+          <div>
+            <li class="items"><img src="img/datastax.png" alt="datrstax"></li>
+          </div>
+          <div>
+            <li class="items"><img src="img/ibm.png" alt="IBM"></li>
+          </div>
+          <div>
+            <li class="items"><img src="img/marp.png" alt="MAPR"></li>
+          </div>
+          <div>
+            <li class="items"><img src="img/hortonworks.png" alt="Hortonworks"></li>
+          </div>
+          <div>
+            <li class="items"><img src="img/cloudera.png" alt="cloudera"></li>
+          </div>
+          <!-- <div>
+            <li class="items"><img src="img/client1.png" alt="datrstax"></li>
+          </div> -->
         </div>
       </div>
 
@@ -441,26 +445,25 @@
       <h2></h2>
     </div>
 
-    <div class="box16 box" id="box16" style="display:none;">
-      <ul class="hs4 no-scrollbar">
-        <li class="item ">
-          <img src="img/dumy1.png" alt="review_one">
+    <div class="box16 box" id="box16">
+      <ul class="hs4 no-scrollbar slickkkk">
+        <li class="item">
+          <img src="img/r1.png" alt="review_one">
           <div class="review">
-            <h3>VP of Engineering, exp Reality</h3>
-            <h4>Development and QA Services for Real Estate Company</h4>
-            <p>" Indium improved the rigor of our testing processes and has resolved hundereds of bugs over the years. "
+            <h3>Suzi Hunn - Learning Strategist</h3>
+            <p>"Anil and I worked on an innovative project together this year. His role was to oversee the app development, and mine was to develop learning strategy. From the start, Anil's positivity, creativity, and tech expertise stood out. Then I met his development team, who consistently delivered ideas and solutions, all while being a joy to work with.  "
             </p>
           </div>
         </li>
         <li class="item">
-          <img src="img/dumy1.png" alt="review_one">
+          <img src="img/r2.png" alt="review_one">
           <div class="review">
-            <h3>Co-founder, Renewable Energy</h3>
-            <h4>Artificial Intelligence Support for Renewable Energy Tech Company </h4>
-            <p>" They work well with our internal team and are dedicated to our success "</p>
+            <h3>Scott Tordeur - Compass Coordinator</h3>
+            <!-- <h4>Artificial Intelligence Support for Renewable Energy Tech Company </h4> -->
+            <p>" We have had the opportunity to work with Ambharii Labs for the past two years as part of the Compass program at Wayzata High School.  Anil and the rest of the team at Ambharii Labs have opened doors both for our students and faculty.  This relationship has allowed our students to gain access to experiences that typically do not exist within the high school experience and has allowed our facility to keep a pulse on present trends and topics.  "</p>
           </div>
         </li>
-        <li class="item">
+        <!-- <li class="item">
           <img src="img/dumy1.png" alt="review_one">
           <div class="review">
             <h3>Head of Data Management Team, Mobile Engagement Company</h3>
@@ -476,18 +479,19 @@
             <p>" Indium Software's QA process and methodology gives me confidence that the game is the best quality it
               can be "</p>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
-    <div class="box17 box reverse" style="display:none;">
-      <p>Your <br> Treasured<br> Words<br> That <br>Keep <br>Us<br> Going</p>
+    <div class="box17 box">
+          <p>Your <br> Treasured<br> Words<br> That <br>Keep <br>Us<br> Going</p>
     </div>
     <div class="box box18">
       <h2>Our Journal</h2>
     </div>
     <div class="box box19">
       <div class="blog1 hovereffect bloga">
-        <a target="_blank" href="https://www.linkedin.com/pulse/ai-driven-analytics-anil-prasad/"><img src="img/2.jpg" alt="blog1_creative"></a>
+        <a target="_blank" href="https://www.linkedin.com/pulse/ai-driven-analytics-anil-prasad/"><img src="img/2.jpg"
+            alt="blog1_creative"></a>
         <div class="overlay"></div>
         <p>AI-Driven Analytics</p>
       </div>
@@ -495,7 +499,8 @@
 
     <div class="box box20">
       <div class="blog2 bloga">
-        <a target="_blank" href="https://www.linkedin.com/pulse/workloads-cloud-anil-prasad/"><img src="img/22.jpg" alt="blog2_creative"></a>
+        <a target="_blank" href="https://www.linkedin.com/pulse/workloads-cloud-anil-prasad/"><img src="img/22.jpg"
+            alt="blog2_creative"></a>
         <div class="overlay"></div>
         <p>Workloads on Cloud</p>
       </div>
@@ -510,71 +515,76 @@
     </div>
     <div class="box box22" id="box22">
       <!-- aakash -->
-      <div class="slickk">
+      <div style="margin: 30px;">
 
-        <div class="item">
-          <a href="#"><img src="img/anil.jpg" alt="anil_arora"></a>
-          <div class="team1 team">
-            <h3>Anil Prasad</h3>
-            <h4> Founder and CEO</h4>
-            <p>Technologist by heart. A Strategic and Tactical Visionary full of Compassion and Empathy. MS in Computer
-              Science and loves family, cricket and friends.</p>
+        <div class="slickk">
+
+          <div class="item">
+            <a href="#"><img src="img/anil.jpg" alt="anil_arora"></a>
+            <div class="team1 team">
+              <h3>Anil Prasad</h3>
+              <h4> Founder and CEO</h4>
+              <p>Technologist by heart. A Strategic and Tactical Visionary full of Compassion and Empathy. MS in
+                Computer
+                Science and loves family, cricket and friends.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="item">
-          <a href="#"><img src="img/ganesh.jpg" alt="riya_aurora"></a>
-          <div class="team2 team">
-            <h3>Ganesh Hegde</h3>
-            <h4>CTO, Software Sevices</h4>
-            <p>A passionate Technologist with exemplary reasoning capabilities. A product of IIM, Bangalore who loves
-              family, cricket and friends.</p>
+          <div class="item">
+            <a href="#"><img src="img/ganesh.jpg" alt="riya_aurora"></a>
+            <div class="team2 team">
+              <h3>Ganesh Hegde</h3>
+              <h4>CTO, Software Sevices</h4>
+              <p>A passionate Technologist with exemplary reasoning capabilities. A product of IIM, Bangalore who loves
+                family, cricket and friends.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="item">
-          <a href="#"><img src="img/Sharad1.jpg" alt="kanika_garg"></a>
-          <div class="team3 team">
-            <h3>Sharad Nalawade</h3>
-            <h4>President, Digital Systems and Technology</h4>
-            <p> Headed enterprise-architecture, led digital transformation using emerging technologies. Also, a visiting
-              professor at IIM Lucknow and IIM Indore</p>
+          <div class="item">
+            <a href="#"><img src="img/Sharad1.jpg" alt="kanika_garg"></a>
+            <div class="team3 team">
+              <h3>Sharad Nalawade</h3>
+              <h4>President, Digital Systems and Technology</h4>
+              <p> Headed enterprise-architecture, led digital transformation using emerging technologies. Also, a
+                visiting
+                professor at IIM Lucknow and IIM Indore</p>
+            </div>
           </div>
-        </div>
 
-        <div class="item">
-          <a href="#" target="_blank"><img src="img/dumy.png" alt="brahm_jot"></a>
-          <div class="team6 team">
-            <h3>Swarup </h3>
-            <h4>CTO, Embedded Systems</h4>
-            <p> Technology and Delivery leader with decades of experience in developing Embedded products and
-              development, and home at testing services.</p>
+          <div class="item">
+            <a href="#" target="_blank"><img src="img/dumy.png" alt="brahm_jot"></a>
+            <div class="team6 team">
+              <h3>Swarup </h3>
+              <h4>CTO, Embedded Systems</h4>
+              <p> Technology and Delivery leader with decades of experience in developing Embedded products and
+                development, and home at testing services.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="item">
-          <a href="#"><img src="img/dumy.png" alt="brahm_jot"></a>
-          <div class="team5 team">
-            <h3>Geoffrey Costigan</h3>
-            <h4>Enterprise Architecture</h4>
-            <p>Disruptor, turnaround leader, and a brilliant strategist with a diverse technical background. A strong
-              leader with a deep sense of vision.</p>
+          <div class="item">
+            <a href="#"><img src="img/dumy.png" alt="brahm_jot"></a>
+            <div class="team5 team">
+              <h3>Geoffrey Costigan</h3>
+              <h4>Enterprise Architecture</h4>
+              <p>Disruptor, turnaround leader, and a brilliant strategist with a diverse technical background. A strong
+                leader with a deep sense of vision.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="item">
-          <a href="#"><img src="img/david.jpg" alt="brahm_jot"></a>
-          <div class="team4 team">
-            <h3>David McDonell</h3>
-            <h4>Sales and Partner Relations</h4>
-            <p> Focused on SmartTech and IntelligentData to accelerate Knowledge-powered applications and digital Ux
-              within business enterprises.</p>
+          <div class="item">
+            <a href="#"><img src="img/david.jpg" alt="brahm_jot"></a>
+            <div class="team4 team">
+              <h3>David McDonell</h3>
+              <h4>Sales and Partner Relations</h4>
+              <p> Focused on SmartTech and IntelligentData to accelerate Knowledge-powered applications and digital Ux
+                within business enterprises.</p>
+            </div>
           </div>
+
+
+
+
         </div>
-
-
-
-
       </div>
 
 
@@ -589,8 +599,8 @@
                 src="img/whatsapp.png" alt="whatsapp_logo"></a>
             <a href="http://bit.ly/2MZxiPh" target="_blank"><img src="img/facebook.png" alt="facebook_logo"></a>
           </span>
-          <a href="mailto:services@ambharii.com?subject=Jobs%20at%20Ambharii
-              &body=Do%20attach%20your%20resume" target="_blank"><button>Apply Now</button></a>
+          <a class="btn1" href="mailto:services@ambharii.com?subject=Jobs%20at%20Ambharii
+              &body=Do%20attach%20your%20resume" target="_blank">Apply Now</a>
         </div>
         <div class="info">
           <p class="mail">services@ambharii.com</p>
