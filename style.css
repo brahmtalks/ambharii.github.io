@@ -1,3 +1,19 @@
+.pg, .pgi {
+  /* display: none; */
+}
+
+@keyframes fadesr {
+  0%{opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.vissr {
+  display: default;
+  animation: fadesr 0.4s;
+}
+
+/* skyroutes css */
+
 html {
 -ms-overflow-style: none;
 }
@@ -6,6 +22,9 @@ body,html{
   scroll-behavior: smooth;
 }
 
+.box9, .box10, .box11 {
+  max-height: 450px;
+}
 
   @font-face {
   font-family: 'Cera Pro Regular';
@@ -70,14 +89,7 @@ body,html{
     margin-top: -10px;
     position: relative;
     z-index: 1000000;
-    
-    /*padding: 20px -20px 40px 10px;*/
-    /*height: 70px;*/
-  }
-  
-  .navbar a:hover {
-    font-size: 110%;
-    /*overflow: hidden;*/
+    height: 60px;
   }
   
 
@@ -107,8 +119,7 @@ body,html{
 #header-right {
     float: right;
     padding-right: 70px;
-    margin-top: -50px;
-    
+    margin-top: -50px;  
 }
 
 #widenav a {
@@ -130,21 +141,19 @@ body,html{
 }*/
 
 #drawer {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: rgb(255, 255, 255); /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 100px; /* Place content 60px from the top */
-    transition: 0.5s;
-    box-shadow: 2px 0px 5px 0px rgba(153, 153, 153, 0.75);
-    user-select: none;
-    z-index: 5;
-
-
+  height: 100vh;
+  width: 0px;
+  /* this is what i changed , from relative to fixed and zindex from 1 to 5*/
+  position: fixed; 
+  z-index: 5;
+  top: 0; 
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden; 
+  padding-top: 100px;
+  transition: 0.5s;
+  box-shadow: 2px 0px 5px 0px rgba(153, 153, 153, 0.75);
+  user-select: none;
 }
 
 #drawer a {
@@ -159,7 +168,7 @@ body,html{
 }
 
 #drawer a:hover {
-    color: #1d1d1d;
+    /* color: #1d1d1d; */
 }
 .myButton {
   /*box-shadow:inset 0px 1px 0px 0px #f29c93;*/
@@ -215,7 +224,6 @@ body,html{
 
 /*form */
 
-
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
@@ -228,7 +236,6 @@ body,html{
   z-index: 9;
   box-shadow: 10px 10px 20px #d5d5d5, 0 0 2px #d2d2d2 ;
 }
-
 /* Add styles to the form container */
 .form-container {
   max-width: 600px;
@@ -237,13 +244,10 @@ body,html{
   text-align: center;
   border-radius: 50px;
 }
-
-
 .form-container .cross{
   float: right;
   font-size: 200%;
   opacity: .7;
-
 }
 .form-container .cross:hover{
   float: right;
@@ -251,16 +255,14 @@ body,html{
   opacity: 1;
   cursor: pointer;
 }
-
 .form-container h1{
   font-family: 'Cera Pro medium';
 }
-
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=email] {
   width: 70%;
   padding: 15px;
-  font-size: 16px;
+  font-size: 22px;
   padding-bottom: 20px;
   margin: 5px 0 22px 0;
   border: none;
@@ -269,14 +271,12 @@ body,html{
   box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
 
 }
-
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
 /* Set a style for the submit/login button */
-
 #myForm form .btn {
   /*background-color: #4CAF50;*/
   color: white;
@@ -292,15 +292,12 @@ body,html{
   border-radius:8px;
   font-size: 20px;
   height: 40px;
-  font-family: 'Cera Pro Light';
-  
+  font-family: 'Cera Pro medium'; 
 }
-
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
 }
-
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   background:linear-gradient(to bottom, #ce0100 5%, #e02020 100%);
@@ -322,7 +319,7 @@ body,html{
   .grid {
     display: grid;
     grid-template-rows: repeat(1,1fr);
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, calc(calc(100% - 8%) / 12));
     grid-gap: 10px;
   }
   .box {
@@ -410,6 +407,10 @@ body,html{
   	margin-bottom: 5%;
     width: 82%;
   }
+
+  .box2 #intro-videomob{
+      display: none;
+  }
   .box3{
     padding-left: 10%;
     padding-right: 10%;
@@ -443,7 +444,7 @@ body,html{
   }
   .box4 video {
   	/*padding: 15% 10% 25% 0%;*/
-    width: 100%;
+    width: 75%;
     padding-top: 0%;
   }
   .box6 {
@@ -538,7 +539,7 @@ body,html{
   }*/
   .box9 a figure img {
   	width: 58%;
-    margin-top: 8%;
+    margin-top: -5%;
   }
   .box9 h3 {
     font-family: 'Cera Pro Medium';
@@ -558,7 +559,7 @@ body,html{
   }
   .box10 a figure img {
   	width: 58%;
-    margin-top: 8%;
+    margin-top: -5%;
   }
   .box10 h3 {
     font-family: 'Cera Pro Medium';
@@ -577,7 +578,7 @@ body,html{
   }
   .box11 a figure img {
   	width: 58%;
-    margin-top: 8%;
+    margin-top: -5%;
     
   }
   .box11 h3 {
@@ -599,6 +600,7 @@ body,html{
   }
   .box12{
     padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   :root {
@@ -720,10 +722,16 @@ body,html{
   .box14 .items img {
       width: 90%;
   }
+
+  .box15 {
+    display: none;
+  }
+  
   .box16 {
     padding-bottom: 10%;
     padding-left: 5%;
     padding-right: 5%;
+    /* padding-top: 20%; */
   }
   .box16 img {
   	width: 70%;
@@ -866,9 +874,9 @@ body,html{
 
   .box21 {
     margin-bottom: -3%;
-    margin-top: 5%;
+    margin-top: -7%;
   }
-  .box22 .hs5 {
+  /* .box22 .hs5 {
   display: grid;
   grid-gap: calc(var(--gutter) / .66);
   grid-template-columns: repeat(6, calc(35% - var(--gutter) * 2));
@@ -888,7 +896,7 @@ body,html{
   align-items: center;
   background: #fff;
   border-radius: 8px;
-  }
+  } */
   .box22 .item img {
     margin: 0 auto;
 	  width: 70%;
@@ -899,6 +907,9 @@ body,html{
     -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
   filter: grayscale(90%);
     /*cursor: url("img/linkedin.png"), auto;*/
+  }
+  .box22 .item {
+    padding-bottom: 1%;
   }
   .box22 .item img:hover{
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
@@ -920,8 +931,8 @@ body,html{
   	border-radius: 4%;
     background-color: #ffffff;
     box-shadow: 20px 20px 40px #f5f5f5, 0 0 5px #f2f2f2 ;
-   	/* margin-left: 5%; */
-   	/* margin-right: 5%; */
+   	margin-left: 5%;
+   	margin-right: 5%;
    	padding-left: 10%;
    	padding-right: 10%;
    	line-height: 1.6;
@@ -931,15 +942,7 @@ body,html{
     padding-top: 5%;
     padding-bottom: 8%;
 }
- /* .box23 img {
-    margin-top: 5%;
-	  width: 90%;
-  	height: auto;
-  	position: relative;
-  	z-index: 1;
-    z-index: 1;
-    cursor: url("img/linkedin.png"), auto;
-}*/
+
   .team2 {
     font-family: 'Cera Pro medium';
     font-size: 100%;
@@ -1013,7 +1016,7 @@ body,html{
     line-height: 1.6;
     margin-top: -8%;
     position: relative;
-    z-index: 10;
+    z-index : 10;
     padding-top: 5%;
     padding-bottom: 8%;
 }
@@ -1036,61 +1039,88 @@ body,html{
     padding-top: 5%;
     padding-bottom: 8%;
 }
-  .contact {
-  	border-radius: 40px;
-   	/*border: 1px black solid;*/
-    box-shadow: 20px 20px 40px #f8f8f8, 0 0 25px #f3f3f3, 0 0 5px #f2f2f2 ;
-   	margin-left: 10%;
-   	margin-right: 10%;
-   	background-color: white;
-   	margin-top: 10%;
-   	margin-bottom: 8%;
+.contact {
+  border-radius: 40px;
+   /*border: 1px black solid;*/
+   background-image:linear-gradient(to bottom, #fdfbfb 5%, #ebedee 100%);
+   /* background-color: white; */
+  box-shadow: 20px 20px 40px #f8f8f8, 0 0 25px #f3f3f3, 0 0 5px #f2f2f2 ;
+   margin-left: 10%;
+   margin-right: 10%;
+   background-color: white;
+   margin-top: 10%;
+   margin-bottom: 8%;
 }
-  .contact .icons {
-  	padding-top: 3%;
-  	margin-bottom: 10%;
+.contact .icons {
+  padding-top: 3%;
+  margin-bottom: 10%;
 }
-  .contact .icons span {
-  	float: left;
-    margin-left: -2%;
-    width: 30%;
+.contact .icons span {
+  float: left;
+  margin-left: -2%;
+  width: 30%;
 }
-  .icons span img {
-	  width: 12%;
-    margin-right: 7%;
+.icons span img {
+  width: 12%;
+  margin-right: 7%;
 }
-  .icons .btn1 {
-    font-family: 'Cera Pro medium';
-    color: white;
-    background:linear-gradient(to bottom, #fe1a00 5%, #e02020 100%);
+.icons .btn1 {
+  font-family: 'Cera Pro medium';
+  color: white;
+  background:linear-gradient(to bottom, #fe1a00 5%, #e02020 100%);
   background-color:#fe1a00;
-    font-size: 115%;
-  	margin-right: -48%;
-  	padding: 1%;
-  	padding-left: 3%;
-  	padding-right: 3%;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
+  font-size: 115%;
+  margin-right: -48%;
+  padding: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
-  .contact .info .mail {
-	  font-size: 260%;
-    font-family: 'Cera Pro thin';
-    margin-top: -3%;
+.contact .info .mail {
+  font-size: 260%;
+  font-family: 'Cera Pro regular';
+  margin-top: -3%;
 }
-  .info .add {
-    font-size: 120%;
-    font-family: 'Cera Pro medium';
+.info {
+  /* background: url('img/building15.png'); */
+  background-blend-mode: lighten;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-  .info .number {
-    font-size: 130%;
-    font-family: 'Cera Pro light';
-    line-height: 1.3;
+.info .add {
+  font-size: 120%;
+  font-family: 'Cera Pro regular';
+  float: right;
+  margin-right: 25%;
+  color: black !important ;
 }
-  .info .terms {
-	  margin-top: 10%;
-    padding-bottom: 2%;
-    font-family: 'Cera Pro light';
+.info .number {
+  font-size: 120%;
+  font-family: 'Cera Pro regular';
+  line-height: 1.3;
+  float: left;
+  margin-left: 25%;
+}
+
+.info img {
+  transform: scale(.2,.2);
+  margin-left: -48.5%;
+}
+
+.info .terms {
+  margin-top: 20%;
+  padding-bottom: 2%;
+  font-family: 'Cera Pro regular';
+}
+
+.info img {
+  width: 100%;
+  overflow: hidden;
+  opacity: .7;
+  position: absolute;
 }
 /*hover*/
 @keyframes hvr-bob {
@@ -1237,7 +1267,7 @@ body,html{
   background: #fff;
   border-radius: 5px;
   width: 80%;
-  height: 66%;
+  height: 70%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -1491,6 +1521,15 @@ body,html{
     }
   }*/
   @media (min-width: 360px) and (max-width: 1024px) {
+   
+    .box9, .box10, .box11 {
+      max-height: initial !important;
+      padding: 5px !important;
+      margin: 0 !important;
+    }
+    .bloga {
+      width: 88% !important;
+    }
     .grid {
       display: block;
     }
@@ -1503,27 +1542,25 @@ body,html{
 
     /* header */
     .navbar {
-        /*padding: 5px 10px 0px 10px;*/
+        height: 140px;
     }
+
     .navbar h3{
-      padding-top: 20px;
-      font-size: 220%;
-
+      margin-top: 5%;
     }
-
+    .navbar h3 a {
+      padding-top: 10px;
+      font-size: 220%;
+    }
     .navbar img {
         width: 100px !important;
     }
-
     #widenav {
         display: none;
     }
     #header-right button{
       margin-top: -30px;
     }
-
-    
-
     #mobnav {
         display: block;
         background: none;
@@ -1532,25 +1569,33 @@ body,html{
         line-height: 10px;
         color:  rgb(114, 114, 114);
         border-radius: 18px;
-
         position: relative;
         top: -3px;
     }
-
     #mobnav:hover {
         color:  rgb(46, 46, 46);
-
     }
 
     /* End of header */
     .box1 img{
-      width: 20%;
+      width: 40%;
       padding-top: 150px;
     }
-    .box2 img {
+    .box2 video{
       width: 100%;
       padding-top: 10%;
     }
+
+    .box2 #intro-video{
+      display: none;
+  }
+  .box2 #intro-videomob{
+    display: block;
+}
+
+.box3{
+  margin-top: -10%;
+}
     .box3 h3, .box3 p {
       text-align: center;
     }
@@ -1559,17 +1604,49 @@ body,html{
       padding-right: 5%;
       float: none;
     }
+
+    .box3 p {
+      font-size: 200%;
+    }
+
     .box:nth-child(3) {
       grid-column: 1/-1;
     }
+
+    .box3 span {
+      margin-left: 5%;
+    }
+
+    .box3 .socialmediaicons {
+      width: 10%;
+    }
+
     .box4 {
       padding-bottom: 15%;
+    }
+    .box6 {
+      height: 620px !important;
     }
     .box6 img {
       width: 100%;
     }
     .box7 {
       padding-bottom: 5%;
+    }
+
+    .box7 img{
+      width: 100%;
+      padding: 0px 40px 0px 40px; 
+    }
+
+    .box7 #btn1{
+      padding-right: 50px;
+      margin-left: -10%;
+    }
+
+    .box7 #btn5{
+      padding-right: 50px;
+      margin-left: -10%;
     }
     /*.box7 .one, .box7 .two {
       width: 110%;
@@ -1579,11 +1656,21 @@ body,html{
       padding-bottom: 20%;
     }
     .box9 img, .box10 img, .box11 img {
-      width: 50%;
+      width: 30% !important;
     }
     .box9 p, .box10 p, .box11 p {
-      font-size: 80%;
+      font-size: 150%;
     }
+    .box9 h3, .box10 h3, .box11 h3 {
+      margin-top: 5px;
+      font-size: 200% !important;
+      margin-bottom: 25px !important;
+    }
+
+    .box13 .popup {
+      margin-top: 20%;
+    }
+
     .box13 .hs {
       grid-template-columns: 10px repeat(6, calc(65% - var(--gutter) * 2)) 10px;
       grid-template-rows: minmax(400px, 1fr);
@@ -1595,6 +1682,19 @@ body,html{
      .box14 .hs3 {
       grid-template-columns: 10px repeat(6, calc(40% - var(--gutter) * 2)) 10px;
       grid-template-rows: minmax(200px, 1fr);
+    }
+
+    .box15 {
+      display: block;
+      padding-top: 20%;
+    }
+
+    .box16 h3 {
+      font-size: 200%;
+    }
+
+    .box16 p {
+      font-size: 150%;
     }
     .box17 {
       display: none;
@@ -1627,8 +1727,27 @@ body,html{
     .box22 li{
       width: 100%;
     }
+
+    .box22 h3 {
+      font-size: 200%;
+    }
+
+    .box22 h4 {
+      font-size: 150%;
+    }
+
+    .box22 p {
+      font-size: 150%;
+    }
     .box23, .box24, .box25 {
       display: none;
+    }
+
+    .contact {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 15%;
+      margin-top: 10%;
     }
     .contact .icons {
       padding-top: 3%;
@@ -1644,11 +1763,11 @@ body,html{
       width: 12%;
       margin-right: 7%;
     }
-    .icons button {
+    .icons .btn1 {
       font-family: 'Cera Pro medium';
       color: white;
       background-color: #e02020;
-      font-size: 360%;
+      font-size: 150%;
       margin-top: 5%;
       margin-right: 0%;
       padding: 1.3%;
@@ -1657,26 +1776,54 @@ body,html{
       border-radius: 40px;
     }
     .contact .info .mail {
-      font-size: 340%;
-      font-family: 'Cera Pro thin';
+      font-size: 200%;
+      font-family: 'Cera Pro regular';
       margin-top: 20%;
       margin-bottom: 10%;
       /*margin-top: -3%;*/
     }
+
+    .contact .icons a {
+      display: block !important;
+      margin: 0 auto !important;
+      margin: 80px !important;
+
+    }
+    .contact {
+      padding: 20px !important;
+    }
+
+    .info {
+      /* background: url('img/building15.png'); */
+      background-blend-mode: lighten;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
     .info .add {
-      font-size: 120%;
-      font-family: 'Cera Pro medium';
+      font-size: 145%;
+      font-family: 'Cera Pro light';
       margin-bottom: 5%;
+      float: right;
+      margin-right: 10%;
     }
     .info .number {
-      font-size: 130%;
+      font-size: 145%;
       font-family: 'Cera Pro light';
       line-height: 1.3;
+      float: left;
+      margin-left: 10%;
+    }
+    .info img {
+      transform: scale(.3,.3);
+      margin-top: 10%;
     }
     .info .terms {
-      margin-top: 20%;
+      margin-top: 40%;
       padding-bottom: 2%;
       font-family: 'Cera Pro light';
+      font-size: 60%;
     }
     .form-popup {
       margin-left: 17%;
@@ -1708,16 +1855,6 @@ body,html{
     display: none !important;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .bloga p {
+    padding: 20px !important;
+  }

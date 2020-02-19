@@ -1,21 +1,28 @@
 <?php
+// define variables and set to empty values
+$name = $email = $number = "";
 
-    $to = "services@ambharii.com";
-    $from = $_POST['email'];
-    $name = $_POST['name'];
-    $number = $_POST['number'];
-    $headers = "From: $from";
-    $subject = "You have a message from your Template";
-    $body = "Here is the message:\n\n".$msg;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $number = test_input($_POST["number"]);
+  $to = "services@ambharii.com";
+  $from = test_input($_POST['email']);
+  $subject = $name . " is trying to reach you ";
+  $body = " You got a message from : " . $name . " Contact: " . $number;
+  $headers = "From: $from";
+  $send = mail($to, $subject, $body, $headers);
+  header("Location: /");
+}
 
-    // $fields = array();
-    // $fields{"name"}    = "Name";
-    // $fields{"email"}    = "Email";
-    // $fields{"message"}   = "Message";
-    
+else {
+    header("Location: /"); 
+}
 
-    // $body = "Here is the message you got:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 
-    $send = mail($to, $subject, $body, $headers);
-    header("Location: /");
 ?>

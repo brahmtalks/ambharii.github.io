@@ -1,4 +1,4 @@
- @font-face {
+@font-face {
   font-family: 'Cera Pro Regular';
   src: url('font/CeraPro-Regular.eot');
   src: url('font/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
@@ -61,27 +61,30 @@
     margin-top: -10px;
     position: relative;
     z-index: 1000000;
-    
+    height: 60px;
     /*padding: 20px -20px 40px 10px;*/
     /*height: 70px;*/
   }
   
-  .navbar a:hover {
-    font-size: 120%;
-    /*overflow: hidden;*/
-  }
+ 
   
 
 /* #navbar img {
     width: 140px;
 } */
-.navbar h3{
+.navbar h3 {
   font-family: 'Cera Pro Medium';
   padding-left: 70px;
   color: rgb(90, 90, 90);
   font-size: 20px;
+  cursor: pointer;
+  padding-top: 5px;
 }
 
+.slickkk div li img {
+  width: 50% !important;
+
+}
 
 #mobnav {
     display: none;
@@ -100,12 +103,9 @@
     font-size: 115%;
     padding: 5px 10px 10px 10px;
     /* text-transform: uppercase; */
-
     font-family: 'Cera Pro Light';
     color: rgb(114, 114, 114);
-
     cursor: pointer;
-
     position: relative;
     top: 10px;
 }
@@ -115,19 +115,17 @@
 }*/
 
 #drawer {
-    height: 100%; /* 100% Full-height */
+    height: 100vh; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: rgb(255, 255, 255); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 100px; /* Place content 60px from the top */
+    padding-top: 100px; 
     transition: 0.5s;
     box-shadow: 2px 0px 5px 0px rgba(153, 153, 153, 0.75);
     user-select: none;
-    z-index: 5;
 
 
 }
@@ -144,7 +142,7 @@
 }
 
 #drawer a:hover {
-    color: #1d1d1d;
+    /* color: #1d1d1d; */
 }
 .myButton {
   /*box-shadow:inset 0px 1px 0px 0px #f29c93;*/
@@ -209,7 +207,7 @@
   .grid {
     display: grid;
     grid-template-rows: repeat(1,1fr);
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, calc(calc(100% - 8%) / 12));
     grid-gap: 10px;
   }
   .box {
@@ -223,17 +221,20 @@
   .box:nth-child(3), .box:nth-child(4) { 
     grid-column: span 6;
   }
-  .box:nth-child(5), .box:nth-child(6) { 
+  .box:nth-child(5), .box:nth-child(6), .box:nth-child(7) {
+    grid-column: span 4;
+  }
+  .box:nth-child(8), .box:nth-child(9) { 
     grid-column: span 6;
   }
-  .box:nth-child(7) {
+  .box:nth-child(10) {
     grid-column: span 12;
   }
-  .box:nth-child(8), .box:nth-child(9), .box:nth-child(10), .box:nth-child(11) 
+  .box:nth-child(11), .box:nth-child(12), .box:nth-child(13), .box:nth-child(14) 
   {
     grid-column: span 3;
   }
-  .box:nth-child(12) {
+  .box:nth-child(15) {
     grid-column: span 12;
   }
 
@@ -271,8 +272,10 @@
   }
   .about_right img {
     /*padding: 15% 10% 25% 0%;*/
-    width: 70%;
-    padding-top: 10%;
+    width: 100%;
+    height: 80%;
+    padding-top: 20%;
+    margin-left: 1%;
     /* padding-bottom: 15%; */
   }
 
@@ -285,11 +288,11 @@
   }
   .features_left .one {
     margin-top: 15%;
-    padding-left: 20%;
+    padding-left: 10%;
   }
   .features_left .two {
     margin-top: -3%;
-    padding-left: 20%;
+    padding-left: 10%;
   }
   .features_left .right_top, .features_left .right_bottom {
     margin-left: -3%;
@@ -297,7 +300,7 @@
   }
   .features_right h2 {
     margin-left: 4%;
-    padding-top: 20%;
+    padding-top: 30%;
   }
   .features_right p {
     font-size: 25px;
@@ -379,7 +382,8 @@
   .service_left {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
+    padding-top: 20%;
   }
   .service_left h2 {
     margin-left: -5%;
@@ -393,17 +397,35 @@
     color: #2a2a2a;
   }
   .service_right img {
-    width: 70%;
-    padding-bottom: 10%;
+    width: 80%;
+    padding-top: 20%;
+    margin-left: 12%;
+    /* padding-bottom: 10%;
     margin-left: 10%;
-    margin-top: 18%;
-  }
-  
-  .slickkk div li img {
-    width: 150% !important;
+    margin-top: 18%; */
   }
 
   /* end services */
+
+  /* int features */
+
+  .intfeature_left img {
+    width: 90%;
+    padding-top: 20%;
+  }
+
+  .intfeature_mid h2 {
+    margin-top: 55%;
+    text-align: center;
+  }
+
+  .intfeature_right img {
+    width: 90%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+  /* end int features */
 
   /* stat */
 
@@ -467,6 +489,7 @@
 .contact {
   border-radius: 40px;
    /*border: 1px black solid;*/
+   background-image:linear-gradient(to bottom, #fdfbfb 5%, #ebedee 100%);
   box-shadow: 20px 20px 40px #f8f8f8, 0 0 25px #f3f3f3, 0 0 5px #f2f2f2 ;
    margin-left: 10%;
    margin-right: 10%;
@@ -503,25 +526,38 @@
 }
 .contact .info .mail {
   font-size: 260%;
-  font-family: 'Cera Pro thin';
+  font-family: 'Cera Pro regular';
   margin-top: -3%;
+}
+.info {
+  background: url('img/building15.png');
+  background-blend-mode: lighten;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .info .add {
   font-size: 120%;
-  font-family: 'Cera Pro medium';
+  font-family: 'Cera Pro regular';
+  float: right;
+  margin-right: 25%;
 }
 .info .number {
-  font-size: 130%;
-  font-family: 'Cera Pro light';
+  font-size: 120%;
+  font-family: 'Cera Pro regular';
   line-height: 1.3;
+  float: left;
+  margin-left: 25%;
 }
+
 .info .terms {
-  margin-top: 10%;
+  margin-top: 20%;
   padding-bottom: 2%;
-  font-family: 'Cera Pro light';
+  font-family: 'Cera Pro regular';
 }
 
   /* end contact */
+
 
   /* mobile optimization */
 
@@ -535,15 +571,17 @@
     h2 {
       text-align: center;
     }
-
+    
     /* header */
     .navbar {
-        /*padding: 5px 10px 0px 10px;*/
+        height: 140px;
     }
     .navbar h3{
-      padding-top: 20px;
-      font-size: 220%;
-
+      margin-top: 5%;
+    }
+    .navbar h3 a {
+      padding-top: 10px;
+      font-size: 180%;
     }
     .navbar img {
         width: 100px !important;
@@ -553,8 +591,7 @@
     }
     #header-right button{
       margin-top: -30px;
-    } 
-
+    }
     #mobnav {
         display: block;
         background: none;
@@ -563,64 +600,88 @@
         line-height: 10px;
         color:  rgb(114, 114, 114);
         border-radius: 18px;
-
         position: relative;
         top: -3px;
     }
-
     #mobnav:hover {
         color:  rgb(46, 46, 46);
-
     }
 
-    /* End of header */ 
+    /* End of header */
 
     .about_left h2 {
-      margin-top: -10%;
+      padding-left: 10%;
     }
 
     .about_left p {
       text-align: center;
+      font-size: 200%;
+      padding-left: 8%;
     }
 
     .about_left .in {
-      margin-left: 37%;
+      margin-left: 40%;
     }
 
     .about_right img {
-      margin-top: -10%;
-      width: 80%;
+      margin-top: 10%;
+      width: 100%;
+      margin-bottom: -10%;
     }
 
     .features_left .one {
-      margin-left: -15%;
-      margin-right: 5%;
-      margin-top: 25%;
+      margin-left: -5%;
+      margin-right: -5%;
+      margin-top: -20%;
     }
 
     .features_left .two {
-      margin-left: -15%;
-      margin-right: 5%;
+      margin-left: -5%;
+      margin-right: -5%;
     }
 
     .features_right h2 {
-      margin-left: -5%;
+      margin-left: 0%;
     }
 
     .features_right p {
       text-align: center;
+      font-size: 200%;
+      margin-left: 5%;
+    }
+
+    .intfeature_mid h2 {
+      margin-top: 40%;
+      margin-left: 0%;
+    }
+
+    .intfeature_left img {
+      padding-top: 0%;
+      width: 70%;
+      padding-left: 3%;
+    }
+
+    .intfeature_right img {
+      padding-top: 0%;
+      width: 70%;
+      padding-left: 3%;
     }
 
     .service_left h2 {
-      margin-top: -10%;
+      margin-top: 10%;
+      padding-left: 10%;
     }
 
     .service_left p {
       text-align: center;
+      font-size: 200%;
+      padding-left: 5%;
+      padding-bottom: -20px;
     }
 
-    .service_right {
-      margin-left: 10%;
+    .service_right img {
+      padding-left: 1%;
+      margin-top: -25%;
     }
 
     .stat_left h2 {
@@ -630,13 +691,13 @@
     .stat1, .stat2, .stat3, .stat4 {
       margin-left: 3%;
     }
-    .contact {
-      margin-left: 8%;
-      margin-right: 8%;
-      margin-bottom: 15%;
-      margin-top: 10%;
-    }
 
+    .contact {
+      margin-left: 5%;
+      margin-right: 2%;
+      margin-bottom: 15%;
+      margin-top: 30%;
+    }
     .contact .icons {
       padding-top: 3%;
       margin-bottom: 10%;
@@ -651,32 +712,62 @@
       width: 12%;
       margin-right: 7%;
     }
-    .icons btn1 {
+    .icons button {
       font-family: 'Cera Pro medium';
       color: white;
       background-color: #e02020;
+      font-size: 360%;
+      margin-top: 5%;
+      margin-right: 0%;
+      padding: 1.3%;
+      padding-left: 3%;
+      padding-right: 3%;
+      border-radius: 40px;
     }
     .contact .info .mail {
-      font-size: 340%;
-      font-family: 'Cera Pro thin';
+      font-size: 200%;
+      font-family: 'Cera Pro regular';
       margin-top: 20%;
       margin-bottom: 10%;
       /*margin-top: -3%;*/
     }
+
+    .contact .icons a {
+      display: block !important;
+      margin: 0 auto !important;
+      margin: 80px !important;
+
+    }
+
+    .contact {
+      padding: 20px !important;
+    }
+    .info {
+      background: url('img/building15.png');
+      background-blend-mode: lighten;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
     .info .add {
-      font-size: 120%;
-      font-family: 'Cera Pro medium';
+      font-size: 145%;
+      font-family: 'Cera Pro light';
       margin-bottom: 5%;
+      float: right;
+      margin-right: 10%;
     }
     .info .number {
-      font-size: 130%;
+      font-size: 145%;
       font-family: 'Cera Pro light';
       line-height: 1.3;
+      float: left;
+      margin-left: 10%;
     }
     .info .terms {
-      margin-top: 20%;
+      margin-top: 40%;
       padding-bottom: 2%;
       font-family: 'Cera Pro light';
+      font-size: 60%;
     }
     .form-popup {
       margin-left: 17%;
@@ -688,6 +779,7 @@
       margin-bottom: 150px !important;
     }
   }
+
 
   .slick-prev, .slick-next{
     background: #c4c4c4 !important;
