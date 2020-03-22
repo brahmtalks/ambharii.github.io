@@ -5,7 +5,7 @@ $subject = $_POST["subject"];
 $message = $_POST["message"];
 
 
-$EmailTo = "imkanikagarg@gmail.com";
+$EmailTo = "contactus@ecarma.in";
 $Title = "New Message Received";
 
 // prepare email body text
@@ -17,7 +17,7 @@ $Fields.= "Email: ";
 $Fields .= $email;
 $Fields .= "\n";
 
-$Fields.= "Subject: ";
+$Fields.= "Phone Number: ";
 $Fields .= $subject;
 $Fields .= "\n";
 
